@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/geist.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('/fonts/epilogue.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/outfit.ttf') format('truetype');
+}
+
+body {
+  @apply bg-zinc-950 text-gray-100 font-geist;
+}
+
+h1 {
+  @apply font-epilogue font-bold text-4xl leading-relaxed;
+}
+
+h2 {
+  @apply font-outfit font-semibold text-3xl leading-relaxed;
+}
+
+h3 {
+  @apply font-outfit font-semibold text-2xl leading-relaxed;
+}
+
+h4 {
+  @apply font-outfit font-medium text-xl leading-relaxed;
+}
+
+h5 {
+  @apply font-outfit font-medium text-lg leading-relaxed;
+}
+
+p, a, span {
+  @apply font-geist text-base leading-relaxed;
+}
+
+.container {
+  @apply mx-auto max-w-content px-4;
+}
