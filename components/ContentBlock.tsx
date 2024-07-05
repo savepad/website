@@ -15,7 +15,7 @@ interface ContentBlockProps {
 
 const ContentBlock: React.FC<ContentBlockProps> = ({ imageUrl, imageAlt, heading, paragraphs, buttonText, buttonLink, reverse }) => {
   return (
-    <section className="relative w-full flex justify-center my-16 lg:my-32">
+    <section className="relative w-full flex justify-center my-16 lg:my-16">
       <div className={`flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} max-w-[1140px] w-full`}>
         <div className="w-full md:w-3/5 p-4 md:p-6">
           <Image
