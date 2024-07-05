@@ -23,9 +23,10 @@ const config: Config = {
       },
       lineHeight: {
         relaxed: '1.5',
+        loose: '2.0',
       },
       maxWidth: {
-        content: '900px',
+        content: '1440px',
       },
       screens: {
         tablet: '640px',

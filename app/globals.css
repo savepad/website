@@ -22,15 +22,15 @@ body {
 }
 
 h1 {
-  @apply font-epilogue font-bold text-4xl leading-relaxed;
+  @apply font-outfit font-bold text-6xl leading-loose;
 }
 
 h2 {
-  @apply font-outfit font-semibold text-3xl leading-relaxed;
+  @apply font-outfit font-semibold text-5xl leading-relaxed;
 }
 
 h3 {
-  @apply font-outfit font-semibold text-2xl leading-relaxed;
+  @apply font-outfit font-semibold text-3xl leading-relaxed;
 }
 
 h4 {
