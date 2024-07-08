@@ -1,10 +1,10 @@
-// components/Nav.tsx
 "use client";
 
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaBars, FaTimes, FaArrowRight } from 'react-icons/fa';
 import Image from 'next/image';
+import Button from './Button';
 
 const Nav: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,15 +14,15 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-opacity-30 bg-zinc-950 backdrop-blur-lg">
-      <div className="container mx-auto px-4 py-4 flex items-center">
-        <div className="w-1/4">
+    <nav className="fixed w-full top-0 z-50 bg-opacity-70 bg-zinc-950 backdrop-blur-lg">
+      <div className="container mx-auto max-w-[1440px] px-4 py-4 flex justify-between items-center">
+        <div className="flex items-center w-1/4">
           <Link href="/">
             <Image src="/logo.svg" alt="Logo" width={150} height={40} />
           </Link>
         </div>
 
-        <div className="hidden md:flex w-1/2 justify-center space-x-8">
+        <div className="hidden md:flex justify-center space-x-8 w-1/2">
           <Link href="/use-cases" className="text-gray-100 hover:text-violet-700">
             Use Cases
           </Link>
@@ -31,10 +31,8 @@ const Nav: React.FC = () => {
           </Link>
         </div>
 
-        <div className="w-1/4 flex">
-          <Link href="/signup" className="bg-violet-700 text-gray-100 px-4 py-2 rounded hover:bg-violet-900 flex items-center">
-            <FaArrowRight className="mr-2" /> Join the waitlist
-          </Link>
+        <div className="hidden md:flex w-1/4">
+          <Button label="Join the waitlist" variant="primary" href="/signup" icon={FaArrowRight} />
         </div>
 
         <div className="md:hidden flex items-center">
@@ -45,7 +43,7 @@ const Nav: React.FC = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-neutral-900 bg-opacity-90 backdrop-blur-lg fixed inset-0 z-40 flex flex-col items-center justify-center">
+        <div className="md:hidden bg-zinc-950 bg-opacity-90 backdrop-blur-lg fixed inset-0 z-40 flex flex-col items-center justify-center pt-20">
           <Link href="/" className="text-gray-100 text-2xl my-2" onClick={toggleMenu}>
             Home
           </Link>
@@ -55,9 +53,9 @@ const Nav: React.FC = () => {
           <Link href="/whos-it-for" className="text-gray-100 text-2xl my-2" onClick={toggleMenu}>
             Personas
           </Link>
-          <Link href="/signup" className="bg-violet-700 text-gray-100 px-4 py-2 rounded mt-4 hover:bg-violet-900 flex items-center">
-            <FaArrowRight className="mr-2" /> Join the waitlist
-          </Link>
+          <div className="fixed bottom-0 w-full px-4 py-4">
+            <Button label="Join the waitlist" variant="primary" href="/signup" icon={FaArrowRight} className="w-full" />
+          </div>
         </div>
       )}
     </nav>
