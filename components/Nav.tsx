@@ -54,7 +54,7 @@ const Nav: React.FC = () => {
             Personas
           </Link>
           <div className="fixed bottom-0 w-full px-4 py-4">
-            <Button label="Join the waitlist" variant="primary" href="/signup" icon={FaArrowRight} className="w-full" />
+            <Button label="Join the waitlist" variant="primary" href="/signup" icon={FaArrowRight} />
           </div>
         </div>
       )}
