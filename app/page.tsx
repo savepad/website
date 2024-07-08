@@ -7,6 +7,7 @@ import HomeProblem from '../components/HomeProblem';
 import ContentBlock from '../components/ContentBlock';
 import CardGrid from '../components/CardGrid';
 import Faq from '../components/Faq';
+import Wall from '../components/Wall';
 
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -145,6 +146,8 @@ const HomePage: React.FC = () => {
         ]}
       />
       <HomeProblem />
+
+      <Wall />
 
       <ContentBlock
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
