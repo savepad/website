@@ -41,8 +41,12 @@ h5 {
   @apply font-outfit font-medium text-lg leading-relaxed;
 }
 
-p, a, span {
-  @apply font-geist text-base leading-relaxed;
+p, span {
+  @apply font-geist text-base leading-loose text-gray-300;
+}
+
+a {
+  @apply font-geist text-base leading-relaxed text-violet-500 hover:text-violet-600;
 }
 
 .container {

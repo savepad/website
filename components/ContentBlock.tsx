@@ -29,7 +29,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ imageUrl, imageAlt, heading
         </div>
 
         <div className="w-full md:w-2/5 flex flex-col justify-center p-4 md:p-10">
-          <h3 className="font-normal text-4xl mb-4">{heading}</h3>
+          <h3 className="font-normal text-2xl md:text-4xl mb-4">{heading}</h3>
           {paragraphs.map((paragraph, index) => (
             <p key={index} className="mb-4">{paragraph}</p>
           ))}

@@ -31,7 +31,7 @@ const Card: React.FC<CardProps> = ({ imageUrl, imageAlt, title, description, lin
       <div className={`flex flex-col justify-center mx-8 ${singleColumn && imageUrl ? 'md:w-1/2 md:pl-6' : 'mt-4'} ${!imageUrl ? 'h-full' : ''}`}>
         <div className="flex flex-col justify-center h-full">
           <h3 className="font-normal mb-4 mt-4">{title}</h3>
-          <p className="mb-4 leading-loose">{description}</p>
+          <p className="mb-4">{description}</p>
           {link && (
             <Link href={link} className="text-violet-700 hover:text-violet-900 transition duration-300">
               Learn more
