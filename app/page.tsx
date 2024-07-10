@@ -9,6 +9,7 @@ import ContentBlock from '../components/ContentBlock';
 import CardGrid from '../components/CardGrid';
 import Faq from '../components/Faq';
 import Wall from '../components/Wall';
+import Cta from '../components/Cta';
 
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -214,6 +215,16 @@ const HomePage: React.FC = () => {
         ]}
       />
 <Faq faqs={faqData} />
+
+<Cta
+        title="Get started for free"
+        paragraphs={[
+          "Savepad's generous free tier gives you LIMITS.",
+          "Our first 250 waitlist users will get lifetime access to Savepad for free."
+        ]}
+        buttonText="Sign Up for Free"
+        buttonHref="/signup"
+      />
 
     </main>
   );
