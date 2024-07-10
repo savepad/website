@@ -14,7 +14,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imageUrl, imageAlt, title, description, link, singleColumn, imageLeft }) => {
   return (
-    <div className={`rounded-lg bg-gradient-to-br from-zinc-900 to-zinc-950 p-12 flex ${singleColumn ? 'flex-col md:flex-row' : 'flex-col'} ${singleColumn && imageLeft ? 'md:flex-row-reverse' : ''} min-h-[45vh]`}>
+    <div className={`rounded-lg bg-gradient-to-br from-zinc-900 to-zinc-950 p-12 flex ${singleColumn ? 'flex-col md:flex-row' : 'flex-col'} ${singleColumn && imageLeft ? 'md:flex-row-reverse' : ''} min-h-[500px]`}>
       {imageUrl && imageAlt && (
         <div className={`w-full ${singleColumn ? 'md:w-1/2' : ''} flex justify-center`}>
           <div className="relative w-full h-full pb-[56.25%]">

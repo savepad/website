@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import Nav from '../../components/Nav';
 import Hero from '../../components/Hero';
 
@@ -7,17 +6,6 @@ import Hero from '../../components/Hero';
 const SomePage: React.FC = () => {
   return (
     <main>
-
-      <Head>
-      <title>Use Cases</title>
-      <meta name="description" content="Collaborative Swipe File and Knowledge Base for Growth Teams" />
-      <meta property="og:title" content="Use Cases" />
-      <meta property="og:description" content="Collaborative Swipe File and Knowledge Base for Growth Teams" />
-      <meta property="og:image" content="https://res.cloudinary.com/savepad-web/image/upload/v1715850562/Branding/Savedapp_Fallback_OG_tnc2w0.png" />
-      <meta property="og:url" content="https://savepad.app" />
-      <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
       <Nav />
       <Hero
         tagline="What's it for?"

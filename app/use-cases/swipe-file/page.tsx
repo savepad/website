@@ -8,16 +8,15 @@ const SomePage: React.FC = () => {
     <main>
       <Nav />
       <Hero
-        tagline="Who's it for?"
-        heading="Built from the ground up. With you in mind."
-        description="Savepad is primarily opinionated towards serving the needs of cross-functional growth teams in SaaS. Additionally, we’ve also seen designers, developers, agencies, and online communities get the most value."
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
-        imageAlt="Personas"
+        tagline="What's it for?"
+        heading="Powerful Alone. Better Together."
+        description="Savepad is a collaborative reference management platform built for marketers, designers, and developers in growth teams. Not a fan of sharing? Savepad works great just for you too."
+        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850726/Landing%20Pages/Use%20Cases/Swipe_File_fklono.png"
+        imageAlt="Use Cases"
         buttonLabel="Get started for free"
         buttonHref="/signup"
         buttonVariant="primary"
       />
-
     </main>
   );
 };

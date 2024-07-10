@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import HomeHero from '../components/HomeHero';
 import Nav from '../components/Nav';
 import HomeSplash from '../components/HomeSplash';
@@ -8,7 +7,7 @@ import HomeProblem from '../components/HomeProblem';
 import ContentBlock from '../components/ContentBlock';
 import CardGrid from '../components/CardGrid';
 import Faq from '../components/Faq';
-import Wall from '../components/Wall';
+// import Wall from '../components/Wall';
 import Cta from '../components/Cta';
 
 import { FaArrowRight } from 'react-icons/fa';
@@ -138,16 +137,6 @@ const HomePage: React.FC = () => {
   return (
     <main>
 
-      <Head>
-      <title>Savepad</title>
-      <meta name="description" content="Collaborative Swipe File and Knowledge Base for Growth Teams" />
-      <meta property="og:title" content="Savepad" />
-      <meta property="og:description" content="Collaborative Swipe File and Knowledge Base for Growth Teams" />
-      <meta property="og:image" content="https://res.cloudinary.com/savepad-web/image/upload/v1715850562/Branding/Savedapp_Fallback_OG_tnc2w0.png" />
-      <meta property="og:url" content="https://savepad.app" />
-      <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
       <Nav />
       <HomeHero />
       <HomeSplash />
@@ -160,7 +149,7 @@ const HomePage: React.FC = () => {
       />
       <HomeProblem />
 
-      <Wall />
+      {/* <Wall /> */}
 
       <ContentBlock
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"

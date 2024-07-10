@@ -1,19 +1,27 @@
-// app/layout.tsx
-import './globals.css'
+import './globals.css';
 import { ReactNode } from 'react';
 
 export const metadata = {
   title: 'Savepad',
-  description: 'The collaborative swipe file for growth teams.',
+  description: 'Collaborative Swipe File and Knowledge Base for growth teams',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.savepad.app/',
+    siteName: 'Savepad',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@savepadapp',
+    creator: '@gunnyganatra',
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <div className="container">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );
