@@ -32,7 +32,7 @@ const Nav: React.FC = () => {
         </div>
 
         <div className="hidden md:flex w-1/4">
-          <Button label="Join the waitlist" variant="primary" href="/signup" icon={FaArrowRight} />
+          <Button label="Launch app" variant="primary" href="/signup" icon={FaArrowRight} />
         </div>
 
         <div className="md:hidden flex items-center">
