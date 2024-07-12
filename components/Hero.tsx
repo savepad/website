@@ -6,8 +6,8 @@ interface HeroProps {
   tagline: string;
   heading: string;
   description: string;
-  imageUrl?: string;
-  imageAlt?: string;
+  imageUrl: string;
+  imageAlt: string;
   buttonLabel?: string;
   buttonHref?: string;
   buttonVariant?: 'primary' | 'secondary';
