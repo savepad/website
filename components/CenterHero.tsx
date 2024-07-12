@@ -1,22 +1,19 @@
 import React from 'react';
-import Image from 'next/image';
 import Button from './Button';
 
-interface HeroProps {
+interface CenterHeroProps {
   tagline: string;
   heading: string;
   description: string;
-  imageUrl?: string;
-  imageAlt?: string;
   buttonLabel?: string;
   buttonHref?: string;
   buttonVariant?: 'primary' | 'secondary';
 }
 
-const Hero: React.FC<HeroProps> = ({ tagline, heading, description, imageUrl, imageAlt, buttonLabel, buttonHref, buttonVariant }) => {
+const CenterHero: React.FC<CenterHeroProps> = ({ tagline, heading, description, buttonLabel, buttonHref, buttonVariant }) => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center h-[90vh] text-left px-4 max-w-[1140px] mx-auto">
-      <div className="md:w-1/2 w-full mb-8 md:mb-0">
+    <section className="flex flex-col items-center justify-center h-[60vh] text-center px-4 max-w-[1140px] mx-auto">
+      <div className="max-w-[700px] w-full">
         <p className="text-sm text-gray-300">{tagline}</p>
         <h1 className="text-4xl md:text-5xl font-normal font-outfit my-6">
           {heading}
@@ -30,18 +27,8 @@ const Hero: React.FC<HeroProps> = ({ tagline, heading, description, imageUrl, im
           </div>
         )}
       </div>
-      <div className="md:w-1/2 w-full flex justify-center">
-        <Image
-          src={imageUrl}
-          alt={imageAlt}
-          width={700}
-          height={700}
-          quality={90}
-          className="rounded-lg"
-        />
-      </div>
     </section>
   );
 };
 
-export default Hero;
+export default CenterHero;
