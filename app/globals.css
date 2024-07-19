@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Geist';
+  font-family: 'geist';
   src: url('/fonts/geist.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Epilogue';
+  font-family: 'epilogue';
   src: url('/fonts/epilogue.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Outfit';
+  font-family: 'outfit';
   src: url('/fonts/outfit.ttf') format('truetype');
 }
 
