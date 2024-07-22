@@ -35,7 +35,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ imageUrl, imageAlt, heading
           ))}
           {buttonText && buttonLink && (
             <Link href={buttonLink} passHref legacyBehavior>
-              <a className="mt-4 max-w-[175px] flex justify-center items-center bg-violet-700 text-gray-100 px-4 py-2 rounded hover:bg-violet-800">
+              <a className="mt-4 inline-flex justify-center items-center bg-violet-700 text-gray-100 px-4 py-2 rounded hover:bg-violet-800">
                 {buttonText}
                 <FaChevronRight className="h-5 w-5 ml-2" />
               </a>

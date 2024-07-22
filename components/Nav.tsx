@@ -26,7 +26,7 @@ const Nav: React.FC = () => {
           <Link href="/use-cases" className="text-gray-100 hover:text-violet-700">
             Use Cases
           </Link>
-          <Link href="/whos-it-for" className="text-gray-100 hover:text-violet-700">
+          <Link href="/personas" className="text-gray-100 hover:text-violet-700">
             Personas
           </Link>
         </div>
@@ -50,7 +50,7 @@ const Nav: React.FC = () => {
           <Link href="/use-cases" className="text-gray-100 text-2xl my-2" onClick={toggleMenu}>
             Use Cases
           </Link>
-          <Link href="/whos-it-for" className="text-gray-100 text-2xl my-2" onClick={toggleMenu}>
+          <Link href="/personas" className="text-gray-100 text-2xl my-2" onClick={toggleMenu}>
             Personas
           </Link>
           <div className="fixed bottom-0 w-full px-4 py-4">

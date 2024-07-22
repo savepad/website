@@ -4,14 +4,14 @@ import Hero from '../../components/Hero';
 import ContentBlock from '@/components/ContentBlock';
 
 
-const SomePage: React.FC = () => {
+const PersonasPage: React.FC = () => {
   return (
     <main>
       <Nav />
       <Hero
         tagline="Who's it for?"
         heading="Built from the ground up. With you in mind."
-        description="Savepad is primarily opinionated towards serving the needs of cross-functional growth teams in SaaS. Additionally, we’ve also seen designers, developers, agencies, and online communities get the most value."
+        description="We're focused on the needs of growth teams in SaaS. We’ve also seen designers, developers, agencies, and online communities some great value."
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
         imageAlt="Personas"
         buttonLabel="Get started for free"
@@ -23,52 +23,63 @@ const SomePage: React.FC = () => {
       <ContentBlock
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
         imageAlt="For Growth Teams"
-        heading="For Growth Teams"
+        heading="Growth Teams"
         paragraphs={[
-          "Savepad is primarily opinionated to the needs of growth teams — particularly cross-functional teams of marketers, designers, and developers working in SaaS.",
-          "Intended as a collaborative swipe file for growth teams to work on projects better together, Savepad addresses their common problems and needs first."
+          "Much of our focus is on growth teams — that's marketers, designers, and developers working in tech.",
+          "Savepad's their collaborative swipe file and knowledge base to work on projects better together."
         ]}
-        buttonLink='/this'
-        buttonText='Learn More'
+        buttonLink='/personas/growth-teams'
+        buttonText='Savepad for Growth Teams'
       />
       <ContentBlock
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850632/Landing%20Pages/Personas/Creatives_and_Agencies_axpunw.png"
         imageAlt="Creatives and Devs"
-        heading="For Creatives and Devs"
+        heading="Creatives & Designers"
         paragraphs={[
-          "Similar to growth teams, designers and developers (individuals and agencies) work on several projects that require reference and inspiration management across projects, teams, and clients.",
-          "Savepad’s spaces and teams extends to serve their needs when collaborating, making it easier to share collections within themselves and with clients."
+          "You often need to maintain a portfolio of references, experience, and designs, either for yourself or to collaborate with clients.",
+          "Savepad lets you build an immersive library of references, or a curation of your best work."
         ]}
-        buttonLink='/this'
-        buttonText='Learn More'
+        buttonLink='/personas/designers'
+        buttonText='Savepad for Designers'
         reverse
+      />
+            <ContentBlock
+        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850632/Landing%20Pages/Personas/Creatives_and_Agencies_axpunw.png"
+        imageAlt="Creatives and Devs"
+        heading="Developers"
+        paragraphs={[
+          "Ever needed a dumping ground for courses, examples, notes, components, snippets, and references?",
+          "With full support for URLs, files, assets, code, and notes, Savepad is your personal (or shared) repo for everything you want to save."
+        ]}
+        buttonLink='/personas/developers'
+        buttonText='Savepad for Developers'
       />
       <ContentBlock
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Online_Communities_mrmftr.png"
         imageAlt="Online Communities"
-        heading="For Online Communities"
+        heading="Online Communities"
         paragraphs={[
-          "Many online communities (particularly the free ones like Developer Marketing) run on platforms like Slack, Podia, and Circle. Often, resources are shared by hundreds of people over years, and either get buried in the noise, making it hard to find, or vanish entirely due to the restrictions on chat history some tools implement.",
-          "Savepad allows community owners to maintain these resources as a searchable knowledge base for their community indefinitely."
+          "Many online communities run on platforms like Slack, with resources shared by hundreds of people over years.",
+          "Don't let them get buried or lose them to history limits. Create a searchable knowledge base for your community."
         ]}
-        buttonLink='/this'
-        buttonText='Learn More'
+        buttonLink='/personas/online-communities'
+        buttonText='Savepad for Community Owners'
+        reverse
       />
       <ContentBlock
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Individuals_enhhvh.png"
         imageAlt="For Individuals"
-        heading="For Individuals"
+        heading="You"
         paragraphs={[
-          "Just looking for something like a modern bookmark manager or a place to save all the references and inspiration that you find online? Savepad works great just for you too.",
-          "Make it yours with the collections and tags you care about, and save URLs, files, code, and notes. If and when you’re ready to share, invite collaborators, or publish your space to the web."
+          "Just looking for something like a modern bookmark manager or a place to save all the references and inspiration that you find online?",
+          "Save everything you care about. Invite friends and family, publish to the web, or keep it private. You do you."
         ]}
-        buttonLink='/this'
-        buttonText='Learn More'
-        reverse
+        buttonLink='/personas/you'
+        buttonText='Savepad for you'
       />
 
     </main>
   );
 };
 
-export default SomePage;
+export default PersonasPage;
