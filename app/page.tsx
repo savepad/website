@@ -7,7 +7,7 @@ import HomeProblem from '../components/HomeProblem';
 import ContentBlock from '../components/ContentBlock';
 import CardGrid from '../components/CardGrid';
 import Faq from '../components/Faq';
-// import Wall from '../components/Wall';
+import Wall from '../components/Wall';
 import Cta from '../components/Cta';
 
 import { FaArrowRight } from 'react-icons/fa';
@@ -139,6 +139,7 @@ const HomePage: React.FC = () => {
 
       <Nav />
       <HomeHero />
+      <Wall />
       <Breakpoint
         header="Time to bring some structure to your chaos."
         texts={[
