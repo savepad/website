@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Nav from '../../../components/Nav';
 import CenterHero from '../../../components/CenterHero';
 import WallOfText from '../../../components/WallOfText';
+import Footer from '@/components/Footer';
 
 const securityContent = `
 Here be markdown
@@ -42,6 +43,7 @@ const SecurityPage: React.FC = () => {
             <WallOfText content={securityContent} />
           </div>
         </div>
+        <Footer />
     </main>
   );
 };

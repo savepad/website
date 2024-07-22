@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Nav from '../../../components/Nav';
 import CenterHero from '../../../components/CenterHero';
 import WallOfText from '../../../components/WallOfText';
+import Footer from '@/components/Footer';
 
 const cookiesContent = `
 By signing up to an account on Savepad, you're agreeing to abide by our Terms of Use. These are subject to change at any time, and you'll be notified of any and all changes on the email you sign up with. By signing up to an account on Savepad, you're agreeing to abide by our Terms of Use. These are subject to change at any time, and you'll be notified of any and all changes on the email you sign up with. By signing up to an account on Savepad, you're agreeing to abide by our Terms of Use. These are subject to change at any time, and you'll be notified of any and all changes on the email you sign up with. By signing up to an account on Savepad, you're agreeing to abide by our Terms of Use. These are subject to change at any time, and you'll be notified of any and all changes on the email you sign up with. By signing up to an account on Savepad, you're agreeing to abide by our Terms of Use. These are subject to change at any time, and you'll be notified of any and all changes on the email you sign up with. By signing up to an account on Savepad, you're agreeing to abide by our Terms of Use. These are subject to change at any time, and you'll be notified of any and all changes on the email you sign up with. 
@@ -42,6 +43,7 @@ const CookiesPage: React.FC = () => {
             <WallOfText content={cookiesContent} />
           </div>
         </div>
+        <Footer />
     </main>
   );
 };

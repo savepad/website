@@ -7,7 +7,7 @@ interface WallOfTextProps {
 
 const WallOfText: React.FC<WallOfTextProps> = ({ content }) => {
   return (
-    <section className="items-center justify-center px-4 w-full max-w-[750px] mx-auto">
+    <section className="items-center justify-center px-4 w-full max-w-[750px] mx-auto mb-36">
       <div className="prose dark:prose-dark">
         <ReactMarkdown>{content}</ReactMarkdown>
       </div>

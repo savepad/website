@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Nav from '../../../components/Nav';
 import CenterHero from '../../../components/CenterHero';
 import WallOfText from '../../../components/WallOfText';
+import Footer from '@/components/Footer';
 
 const privacyContent = `
 Here be markdown
@@ -42,6 +43,7 @@ const PrivacyPage: React.FC = () => {
             <WallOfText content={privacyContent} />
           </div>
         </div>
+        <Footer />
     </main>
   );
 };

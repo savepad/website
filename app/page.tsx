@@ -9,6 +9,7 @@ import CardGrid from '../components/CardGrid';
 import Faq from '../components/Faq';
 import Wall from '../components/Wall';
 import Cta from '../components/Cta';
+import Footer from '@/components/Footer';
 
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -215,6 +216,7 @@ const HomePage: React.FC = () => {
         buttonHref="/signup"
       />
 
+<Footer />
     </main>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../../components/Nav';
 import Hero from '../../components/Hero';
 import ContentBlock from '@/components/ContentBlock';
+import Footer from '@/components/Footer';
 
 
 const UseCasesPage: React.FC = () => {
@@ -55,6 +56,7 @@ const UseCasesPage: React.FC = () => {
         buttonText='Learn More'
       />
 
+<Footer />
     </main>
   );
 };

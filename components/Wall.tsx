@@ -4,13 +4,12 @@ import { FaQuoteLeft } from 'react-icons/fa';
 
 const logos = [
   '/logos/Algolia.svg',
-  '/logos/logo2.svg',
-  '/logos/logo3.svg',
+  '/logos/ThoughtSpot.svg',
+  '/logos/DatoCMS.svg',
   '/logos/Sumup.svg',
   '/logos/Amazon.svg',
-  '/logos/logo6.svg',
+  '/logos/Cloudinary.svg',
   '/logos/Prisma.svg',
-  '/logos/logo8.svg',
 ];
 
 const testimonials = [
@@ -37,9 +36,9 @@ const testimonials = [
 const Wall: React.FC = () => {
   return (
     <div className="w-full flex flex-col items-center py-8">
-      <p className="text-center text-gray-400 mb-8">Being actively tested and improved for you by 250+ incredible teams and people</p>
+      <p className="text-center text-gray-400 mb-8">Being actively tested and improved for you by some incredible people across teams of all sizes</p>
       <div className="w-full flex justify-center mb-12">
-        <div className="grid grid-cols-2 md:grid-cols-8 gap-8 items-center max-w-[1140px]">
+        <div className="grid grid-cols-2 md:grid-cols-7 gap-8 items-center max-w-[1140px]">
           {logos.map((logo, index) => (
             <div key={index} className="flex justify-center">
               <Image src={logo} alt={`Company logo ${index + 1}`} width={100} height={50} className="filter grayscale brightness-200 contrast-0" />

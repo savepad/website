@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../../components/Nav';
 import Hero from '../../components/Hero';
 import ContentBlock from '@/components/ContentBlock';
+import Footer from '@/components/Footer';
 
 
 const PersonasPage: React.FC = () => {
@@ -78,6 +79,7 @@ const PersonasPage: React.FC = () => {
         buttonText='Savepad for you'
       />
 
+<Footer />
     </main>
   );
 };
