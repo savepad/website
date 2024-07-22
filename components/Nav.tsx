@@ -1,65 +1,92 @@
 "use client";
 
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaBars, FaTimes, FaArrowRight } from 'react-icons/fa';
 import Image from 'next/image';
 import Button from './Button';
-import ContextMenu from './ContextMenu';
 
 const Nav: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [contextMenuVisible, setContextMenuVisible] = useState(false);
-  const [contextMenuPosition, setContextMenuPosition] = useState({ x: 0, y: 0 });
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const handleContextMenu = (event: React.MouseEvent) => {
-    event.preventDefault();
-    setContextMenuPosition({ x: event.clientX, y: event.clientY });
-    setContextMenuVisible(true);
-  };
-
-  const handleCloseContextMenu = () => {
-    setContextMenuVisible(false);
-  };
-
-  const handleOpenImage = () => {
-    window.open('/logo.svg', '_blank');
-    handleCloseContextMenu();
-  };
-
-  const handleDownloadImage = () => {
-    const link = document.createElement('a');
-    link.href = '/logo.svg';
-    link.download = 'logo.svg';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    handleCloseContextMenu();
-  };
+  const menuItems = [
+    {
+      title: 'Use Cases',
+      links: [
+        { href: '/use-cases/swipe-file', text: 'Collaborative Swipe File' },
+        { href: '/use-cases/knowledge-base', text: 'Knowledge Base' },
+        { href: '/use-cases/bookmark-manager', text: 'Shared Bookmark Manager' },
+      ],
+    },
+    {
+      title: 'Savepad For',
+      links: [
+        { href: '/personas/growth-teams', text: 'Growth Teams' },
+        { href: '/personas/designers', text: 'Creatives & Designers' },
+        { href: '/personas/developers', text: 'Developers' },
+        { href: '/personas/online-communities', text: 'Online Community Owners' },
+        { href: '/personas/you', text: 'Individuals' },
+      ],
+    },
+    {
+      title: 'Product',
+      links: [
+        { href: '/blog/what-is-a-swipe-file', text: 'What is a Swipe File?' },
+        { href: '/features', text: 'Features' },
+        { href: '/guides', text: 'User Guides' },
+        { href: '/changelog', text: 'Product Updates' },
+        { href: '/roadmap', text: 'Roadmap' },
+      ],
+    },
+    {
+      title: 'Savepad',
+      links: [
+        { href: '/about', text: 'About' },
+        { href: '/blog', text: 'Blog' },
+        { href: '/legal/privacy-policy', text: 'Privacy Policy' },
+        { href: '/legal/terms', text: 'Terms of Use' },
+        { href: '/legal/security', text: 'Security & Compliance' },
+        { href: '/legal/cookie-policy', text: 'Cookie Policy' },
+        { href: 'https://savepad.struct.ai/', text: 'Support & Community' },
+      ],
+    },
+  ];
 
   return (
     <nav className="fixed w-full top-0 z-50 bg-opacity-70 bg-zinc-950 backdrop-blur-lg">
       <div className="container mx-auto max-w-[1440px] px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center w-1/4" onContextMenu={handleContextMenu}>
+        <div className="flex items-center w-1/4">
           <Link href="/">
             <Image src="/logo.svg" alt="Logo" width={150} height={40} />
           </Link>
         </div>
 
         <div className="hidden md:flex justify-center space-x-8 w-1/2">
-          <Link href="/use-cases" className="text-gray-100 hover:text-violet-700">
-            Use Cases
-          </Link>
-          <Link href="/personas" className="text-gray-100 hover:text-violet-700">
-            Personas
-          </Link>
+          {menuItems.map((item, index) => (
+            <div key={index} className="relative group">
+              <Link href="#" className="text-gray-100 hover:text-violet-700">
+                {item.title}
+              </Link>
+              <div className="absolute left-0 hidden mt-2 w-48 bg-zinc-950 bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg group-hover:block">
+                {item.links.map((link, linkIndex) => (
+                  <Link
+                    key={linkIndex}
+                    href={link.href}
+                    className="block px-4 py-2 text-gray-100 hover:text-violet-700"
+                  >
+                    {link.text}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="hidden md:flex w-1/4">
+        <div className="hidden md:flex w-1/4 justify-end">
           <Button label="Launch app" variant="primary" href="/signup" icon={FaArrowRight} />
         </div>
 
@@ -71,30 +98,40 @@ const Nav: React.FC = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-zinc-950 bg-opacity-90 backdrop-blur-lg fixed inset-0 z-40 flex flex-col items-center justify-center pt-20">
-          <Link href="/" className="text-gray-100 text-2xl my-2" onClick={toggleMenu}>
-            Home
-          </Link>
-          <Link href="/use-cases" className="text-gray-100 text-2xl my-2" onClick={toggleMenu}>
-            Use Cases
-          </Link>
-          <Link href="/personas" className="text-gray-100 text-2xl my-2" onClick={toggleMenu}>
-            Personas
-          </Link>
-          <div className="fixed bottom-0 w-full px-4 py-4">
+        <div className="md:hidden bg-zinc-950 fixed inset-0 z-40 flex flex-col pt-20 px-4">
+          <div className="flex justify-between items-center w-full mb-8">
+            <Link href="/">
+              <Image src="/logo.svg" alt="Logo" width={150} height={40} />
+            </Link>
+            <button onClick={toggleMenu} className="text-gray-100 focus:outline-none">
+              <FaTimes size={24} />
+            </button>
+          </div>
+          {menuItems.map((item, index) => (
+            <div key={index} className="mb-4 w-full">
+              <Link href="#" className="text-gray-100 text-2xl my-2">
+                {item.title}
+              </Link>
+              <ul className="pl-4">
+                {item.links.map((link, linkIndex) => (
+                  <li key={linkIndex} className="mb-2">
+                    <Link
+                      href={link.href}
+                      className="text-gray-100 text-lg hover:text-violet-700"
+                      onClick={toggleMenu}
+                    >
+                      {link.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          <div className="mt-auto w-full px-4 py-4">
             <Button label="Join the waitlist" variant="primary" href="/signup" icon={FaArrowRight} />
           </div>
         </div>
       )}
-
-      <ContextMenu
-        visible={contextMenuVisible}
-        x={contextMenuPosition.x}
-        y={contextMenuPosition.y}
-        onClose={handleCloseContextMenu}
-        onOpenImage={handleOpenImage}
-        onDownloadImage={handleDownloadImage}
-      />
     </nav>
   );
 };
