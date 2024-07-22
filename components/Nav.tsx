@@ -47,10 +47,6 @@ const Nav: React.FC = () => {
       links: [
         { href: '/about', text: 'About' },
         { href: '/blog', text: 'Blog' },
-        { href: '/legal/privacy-policy', text: 'Privacy Policy' },
-        { href: '/legal/terms', text: 'Terms of Use' },
-        { href: '/legal/security', text: 'Security & Compliance' },
-        { href: '/legal/cookie-policy', text: 'Cookie Policy' },
         { href: 'https://savepad.struct.ai/', text: 'Support & Community' },
       ],
     },
@@ -91,43 +87,45 @@ const Nav: React.FC = () => {
         </div>
 
         <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu} className="text-gray-100 focus:outline-none">
+          <button onClick={toggleMenu} className="text-gray-100 bg-zinc-950 focus:outline-none">
             {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-zinc-950 fixed inset-0 z-40 flex flex-col pt-20 px-4">
-          <div className="flex justify-between items-center w-full mb-8">
+        <div className="md:hidden bg-zinc-950 fixed inset-0 z-40 flex flex-col justify-between pt-4 px-4">
+          <div className="flex justify-between items-center bg-zinc-950 w-full pb-8">
             <Link href="/">
-              <Image src="/logo.svg" alt="Logo" width={150} height={40} />
+              <Image src="/logo.svg" alt="Logo" width={100} height={40} />
             </Link>
-            <button onClick={toggleMenu} className="text-gray-100 focus:outline-none">
-              <FaTimes size={24} />
+            <button onClick={toggleMenu} className="text-gray-100 bg-zinc-950 focus:outline-none">
+              <FaTimes size={24} className="bg-zinc-950" />
             </button>
           </div>
-          {menuItems.map((item, index) => (
-            <div key={index} className="mb-4 w-full">
-              <Link href="#" className="text-gray-100 text-2xl my-2">
-                {item.title}
-              </Link>
-              <ul className="pl-4">
-                {item.links.map((link, linkIndex) => (
-                  <li key={linkIndex} className="mb-2">
-                    <Link
-                      href={link.href}
-                      className="text-gray-100 text-lg hover:text-violet-700"
-                      onClick={toggleMenu}
-                    >
-                      {link.text}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-          <div className="mt-auto w-full px-4 py-4">
+          <div className="flex bg-zinc-950 flex-col space-y-4">
+            {menuItems.map((item, index) => (
+              <div key={index} className="w-full">
+                <Link href="#" className="text-gray-100 text-lg my-2">
+                  {item.title}
+                </Link>
+                <ul className="pt-2">
+                  {item.links.map((link, linkIndex) => (
+                    <li key={linkIndex} className="mb-2">
+                      <Link
+                        href={link.href}
+                        className="text-gray-400 hover:text-violet-400"
+                        onClick={toggleMenu}
+                      >
+                        {link.text}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 w-full items-center justify-center flex bg-violet-700">
             <Button label="Join the waitlist" variant="primary" href="/signup" icon={FaArrowRight} />
           </div>
         </div>
