@@ -5,7 +5,7 @@ import { FaPlay } from 'react-icons/fa';
 
 const HomeHero: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-[90vh] text-center px-4">
+    <section className="flex flex-col items-center justify-center h-[85vh] text-center px-4">
       <div className="max-w-[625px] w-full">
         <p className="text-sm text-gray-300">Early Access 🪄</p>
         <h1 className="text-5xl md:text-6xl font-semibold font-outfit mt-2">

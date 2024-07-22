@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeHero from '../components/HomeHero';
 import Nav from '../components/Nav';
-import HomeSplash from '../components/HomeSplash';
+// import HomeSplash from '../components/HomeSplash';
 import Breakpoint from '../components/Breakpoint';
 import HomeProblem from '../components/HomeProblem';
 import ContentBlock from '../components/ContentBlock';
@@ -139,7 +139,6 @@ const HomePage: React.FC = () => {
 
       <Nav />
       <HomeHero />
-      <HomeSplash />
       <Breakpoint
         header="Time to bring some structure to your chaos."
         texts={[
