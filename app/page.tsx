@@ -140,7 +140,7 @@ const HomePage: React.FC = () => {
 
       <Nav />
       <HomeHero />
-      <Wall />
+      {/* <Wall /> */}
       <Breakpoint
         header="Time to bring some structure to your chaos."
         texts={[
