@@ -20,9 +20,7 @@ const Nav: React.FC = () => {
         { href: '/features', text: 'Features' },
         { href: '/guides', text: 'User Guides' },
         { href: '/changelog', text: 'Product Updates' },
-        { href: '/roadmap', text: 'Roadmap' },
         { href: 'https://savepad.struct.ai/', text: 'Support & Community' },
-        { href: '/blog', text: 'Blog' },
       ],
     },
     {
@@ -87,8 +85,8 @@ const Nav: React.FC = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-zinc-950 fixed inset-0 z-40 flex flex-col justify-between pt-4 px-4">
-          <div className="flex justify-between items-center bg-zinc-950 w-full pb-8">
+        <div className="md:hidden bg-zinc-950 fixed inset-0 z-40 flex flex-col justify-between pt-4">
+          <div className="flex justify-between items-center bg-zinc-950 w-full pb-8 px-4">
             <Link href="/">
               <Image src="/logo.svg" alt="Logo" width={100} height={40} />
             </Link>
@@ -96,7 +94,7 @@ const Nav: React.FC = () => {
               <FaTimes size={24} className="bg-zinc-950" />
             </button>
           </div>
-          <div className="flex bg-zinc-950 flex-col space-y-4">
+          <div className="flex bg-zinc-950 flex-col space-y-4 px-4 py-4">
             {menuItems.map((item, index) => (
               <div key={index} className="w-full">
                 <Link href="#" className="text-gray-100 text-lg my-2">
@@ -118,7 +116,7 @@ const Nav: React.FC = () => {
               </div>
             ))}
           </div>
-          <div className="mt-10 w-full items-center justify-center flex bg-violet-700">
+          <div className="mt-0 pt-2 p-2 w-full items-center justify-center flex bg-violet-700">
             <Button label="Join the waitlist" variant="primary" href="/signup" icon={FaArrowRight} />
           </div>
         </div>
