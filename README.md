@@ -1,4 +1,4 @@
-![Savepad](/logo.svg)
+![Savepad](/public/logo.svg)
 
 This is the website for [Savepad](https://savepad.app)
 
