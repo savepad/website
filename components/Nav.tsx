@@ -94,6 +94,9 @@ const Nav: React.FC = () => {
               <FaTimes size={24} className="bg-zinc-950" />
             </button>
           </div>
+          <div className="mt-0 pt-2 p-2 w-full items-center justify-center flex bg-violet-700">
+            <Button label="Create your free account" variant="primary" href="/signup" icon={FaArrowRight} />
+          </div>
           <div className="flex bg-zinc-950 flex-col space-y-4 px-4 py-4">
             {menuItems.map((item, index) => (
               <div key={index} className="w-full">
@@ -116,8 +119,7 @@ const Nav: React.FC = () => {
               </div>
             ))}
           </div>
-          <div className="mt-0 pt-2 p-2 w-full items-center justify-center flex bg-violet-700">
-            <Button label="Join the waitlist" variant="primary" href="/signup" icon={FaArrowRight} />
+          <div className="border-t border-gray-400 pt-4 flex justify-between items-center">
           </div>
         </div>
       )}
