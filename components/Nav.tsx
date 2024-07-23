@@ -15,6 +15,17 @@ const Nav: React.FC = () => {
 
   const menuItems = [
     {
+      title: 'Savepad',
+      links: [
+        { href: '/features', text: 'Features' },
+        { href: '/guides', text: 'User Guides' },
+        { href: '/changelog', text: 'Product Updates' },
+        { href: '/roadmap', text: 'Roadmap' },
+        { href: 'https://savepad.struct.ai/', text: 'Support & Community' },
+        { href: '/blog', text: 'Blog' },
+      ],
+    },
+    {
       title: 'Use Cases',
       links: [
         { href: '/use-cases/swipe-file', text: 'Collaborative Swipe File' },
@@ -23,31 +34,13 @@ const Nav: React.FC = () => {
       ],
     },
     {
-      title: 'Savepad For',
+      title: 'Personas',
       links: [
         { href: '/personas/growth-teams', text: 'Growth Teams' },
         { href: '/personas/designers', text: 'Creatives & Designers' },
         { href: '/personas/developers', text: 'Developers' },
         { href: '/personas/online-communities', text: 'Online Community Owners' },
         { href: '/personas/you', text: 'Individuals' },
-      ],
-    },
-    {
-      title: 'Product',
-      links: [
-        { href: '/blog/what-is-a-swipe-file', text: 'What is a Swipe File?' },
-        { href: '/features', text: 'Features' },
-        { href: '/guides', text: 'User Guides' },
-        { href: '/changelog', text: 'Product Updates' },
-        { href: '/roadmap', text: 'Roadmap' },
-      ],
-    },
-    {
-      title: 'Savepad',
-      links: [
-        { href: '/about', text: 'About' },
-        { href: '/blog', text: 'Blog' },
-        { href: 'https://savepad.struct.ai/', text: 'Support & Community' },
       ],
     },
   ];
