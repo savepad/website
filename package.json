@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "cloudinary": "^2.2.0",
     "next": "14.2.4",
-    "react": "^18",
-    "react-dom": "^18"
+    "next-sitemap": "^4.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-markdown": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",

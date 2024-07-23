@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Geist';
+  font-family: 'geist';
   src: url('/fonts/geist.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Epilogue';
+  font-family: 'epilogue';
   src: url('/fonts/epilogue.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Outfit';
+  font-family: 'outfit';
   src: url('/fonts/outfit.ttf') format('truetype');
 }
 
@@ -22,15 +22,15 @@ body {
 }
 
 h1 {
-  @apply font-epilogue font-bold text-4xl leading-relaxed;
+  @apply font-outfit font-bold text-6xl leading-loose;
 }
 
 h2 {
-  @apply font-outfit font-semibold text-3xl leading-relaxed;
+  @apply font-outfit font-semibold text-5xl leading-relaxed;
 }
 
 h3 {
-  @apply font-outfit font-semibold text-2xl leading-relaxed;
+  @apply font-outfit font-semibold text-3xl leading-relaxed;
 }
 
 h4 {
@@ -41,8 +41,12 @@ h5 {
   @apply font-outfit font-medium text-lg leading-relaxed;
 }
 
-p, a, span {
-  @apply font-geist text-base leading-relaxed;
+p, span {
+  @apply font-geist text-base leading-loose text-gray-300;
+}
+
+a {
+  @apply font-geist text-base leading-relaxed text-violet-700 hover:text-violet-500;
 }
 
 .container {

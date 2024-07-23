@@ -1,0 +1,27 @@
+import { generateMetadata as generateRootMetadata } from '../layout';
+
+export const generateMetadata = () => {
+  return {
+    ...generateRootMetadata(),
+    title: 'Home Page Title',
+    description: 'This is the home page description',
+    openGraph: {
+      url: 'https://www.example.com/home',
+      title: 'Open Graph Title for Home Page',
+      description: 'Open Graph description for Home Page',
+      images: [
+        {
+          url: 'https://www.example.com/images/home.jpg',
+          width: 800,
+          height: 600,
+          alt: 'Og Image Alt',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@example',
+      creator: '@example',
+    },
+  };
+};

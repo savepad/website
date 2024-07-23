@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        geist: ['Geist', 'sans-serif'],
-        epilogue: ['Epilogue', 'sans-serif'],
-        outfit: ['Outfit', 'sans-serif'],
+        geist: ['geist', 'sans-serif'],
+        epilogue: ['epilogue', 'sans-serif'],
+        outfit: ['outfit', 'sans-serif'],
       },
       colors: {
         neutral: {
@@ -23,9 +23,10 @@ const config: Config = {
       },
       lineHeight: {
         relaxed: '1.5',
+        loose: '2.0',
       },
       maxWidth: {
-        content: '900px',
+        content: '1440px',
       },
       screens: {
         tablet: '640px',
