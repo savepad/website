@@ -56,6 +56,18 @@ const PersonasPage: React.FC = () => {
         buttonText='Savepad for Developers'
       />
       <ContentBlock
+        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850632/Landing%20Pages/Personas/Creatives_and_Agencies_axpunw.png"
+        imageAlt="Creatives and Devs"
+        heading="Agencies"
+        paragraphs={[
+          "You often need to maintain a portfolio of references, experience, and designs, either for yourself or to collaborate with clients.",
+          "Savepad lets you build an immersive library of references, or a curation of your best work."
+        ]}
+        buttonLink='/personas/agencies'
+        buttonText='Savepad for Agencies'
+        reverse
+      />
+      <ContentBlock
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Online_Communities_mrmftr.png"
         imageAlt="Online Communities"
         heading="Online Communities"
@@ -65,7 +77,6 @@ const PersonasPage: React.FC = () => {
         ]}
         buttonLink='/personas/online-communities'
         buttonText='Savepad for Community Owners'
-        reverse
       />
       <ContentBlock
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Individuals_enhhvh.png"
@@ -77,6 +88,7 @@ const PersonasPage: React.FC = () => {
         ]}
         buttonLink='/personas/you'
         buttonText='Savepad for you'
+        reverse
       />
 
 <Footer />

@@ -16,6 +16,7 @@ const Nav: React.FC = () => {
   const menuItems = [
     {
       title: 'Savepad',
+      path: '/features',
       links: [
         { href: '/features', text: 'Features' },
         { href: '/guides', text: 'User Guides' },
@@ -25,6 +26,7 @@ const Nav: React.FC = () => {
     },
     {
       title: 'Use Cases',
+      path: '/use-cases',
       links: [
         { href: '/use-cases/swipe-file', text: 'Collaborative Swipe File' },
         { href: '/use-cases/knowledge-base', text: 'Knowledge Base' },
@@ -33,10 +35,12 @@ const Nav: React.FC = () => {
     },
     {
       title: 'Personas',
+      path: '/personas',
       links: [
         { href: '/personas/growth-teams', text: 'Growth Teams' },
         { href: '/personas/designers', text: 'Creatives & Designers' },
         { href: '/personas/developers', text: 'Developers' },
+        { href: '/personas/agencies', text: 'Agencies' },
         { href: '/personas/online-communities', text: 'Online Community Owners' },
         { href: '/personas/you', text: 'Individuals' },
       ],
@@ -55,7 +59,7 @@ const Nav: React.FC = () => {
         <div className="hidden md:flex justify-center space-x-8 w-1/2">
           {menuItems.map((item, index) => (
             <div key={index} className="relative group">
-              <Link href="#" className="text-gray-100 hover:text-violet-700">
+             <Link href={item.path} className="text-gray-100 hover:text-violet-700">
                 {item.title}
               </Link>
               <div className="absolute left-0 hidden mt-2 w-48 bg-zinc-950 bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg group-hover:block">
@@ -100,7 +104,7 @@ const Nav: React.FC = () => {
           <div className="flex bg-zinc-950 flex-col space-y-4 px-4 py-4">
             {menuItems.map((item, index) => (
               <div key={index} className="w-full">
-                <Link href="#" className="text-gray-100 text-lg my-2">
+                <Link href={item.path} className="text-gray-100 text-lg my-2">
                   {item.title}
                 </Link>
                 <ul className="pt-2">

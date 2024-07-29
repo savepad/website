@@ -12,7 +12,7 @@ interface CenterHeroProps {
 
 const CenterHero: React.FC<CenterHeroProps> = ({ tagline, heading, description, buttonLabel, buttonHref, buttonVariant }) => {
   return (
-    <section className="flex flex-col items-center justify-center h-[60vh] text-center px-4 max-w-[1140px] mx-auto">
+    <section className="flex flex-col items-center justify-center h-[800px] text-center px-4 max-w-[1140px] mx-auto">
       <div className="max-w-[700px] w-full">
         <p className="text-sm text-gray-300">{tagline}</p>
         <h1 className="text-4xl md:text-5xl font-normal font-outfit my-6">
