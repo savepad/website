@@ -9,7 +9,6 @@ interface CardGridProps {
     title: string;
     description: string;
     link?: string;
-    border?: 'red' | 'green' | 'purple' | 'white';
   }[];
   columns: 1 | 2 | 3;
   useShadowCard?: boolean;
@@ -37,7 +36,6 @@ const CardGrid: React.FC<CardGridProps> = ({ cards, columns, useShadowCard = fal
               link={card.link}
               singleColumn={columns === 1}
               imageLeft={index % 2 === 0}
-              border={card.border}
             />
           ) : (
             <Card
