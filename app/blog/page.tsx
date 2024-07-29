@@ -13,7 +13,7 @@ const blogCards = [
     imageAlt: 'Manage',
     title: 'What is a Swipe File?',
     description: "TL;DR? A swipe file is a collection of examples and references that you find inspiring and think are worth saving.",
-    link: '/blog',
+    link: '/blog/what-is-a-swipe-file',
   },
 ];
 
