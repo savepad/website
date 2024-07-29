@@ -16,17 +16,17 @@ interface TOCProps {
 }
 
 const FeatureTOC: React.FC<TOCProps> = ({ features }) => (
-  <aside className="sticky top-4 md:w-1/4 hidden md:block px-4">
+  <aside className="top-4 md:w-1/4 hidden md:block px-4">
     <nav>
-      <h2 className="text-xl font-semibold mb-4 text-gray-300">On this page</h2>
+      <h2 className="text-xl font-semibold mb-4 text-gray-600">On this page</h2>
       {features.map((category, index) => (
         <div key={index} className="mb-4">
-          <h3 className="text-lg font-semibold mb-2">{category.category}</h3>
+          <h3 className="text-lg font-semibold mb-4 mt-8">{category.category}</h3>
           <ul className="space-y-2 text-gray-300">
             {category.features.map((feature) => (
               <li key={feature.id}>
                 <Link href={`#${feature.id}`} className="hover:text-violet-400 text-gray-400">
-                  {feature.title}
+                — {feature.title}
                 </Link>
               </li>
             ))}
