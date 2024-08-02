@@ -5,11 +5,11 @@ const CollaborationFeature = () => (
   <section id="collaboration" className="mb-12 max-w-full">
     <h3>Collaboration</h3><br></br>
 
-    <Image src="https://savepad.app/wp-content/uploads/Search.png" alt="Save feature" width={1024} height={578} layout="responsive" /><br></br>
+    <p>Savepad is made for collaboration! By default you’ll start out with a personal account. We’d recommend you keep that private. Simply create one or more new teams for home or work, and invite your colleagues, friends, or family to collaborate on saves with you.</p><br></br>
 
-    <p>Regardless of what you add to Savepad — links, images, PDFs, code, components, or videos — Savepad automatically generates enough metadata to index all possible text related to that save.</p><br></br>
+<p>Team accounts have all the functionality of your personal accounts, except that you get more control on roles, permissions, and access.</p><br></br>
 
-    <p>Need to surface those obscure landing pages you remember saving that were related to Product Marketing, were Developer Tools, and had a design that caught your attention? Stack all those criteria to make sure it was Auth0 you were looking for as a reference!</p><br></br>
+<p>Once you’ve got your team accounts set up, each account works just like your own. Teams can share workspaces, collections, and collaborate on saves. Workspace owners and admins can define roles for each user. Owners and admins can select which users have access to which spaces and/or collections.</p>
   </section>
 );
 

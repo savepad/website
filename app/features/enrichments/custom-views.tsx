@@ -5,11 +5,10 @@ const CustomViewsFeature = () => (
   <section id="customviews" className="mb-12 max-w-full">
     <h3>Custom Views & Filters</h3><br></br>
 
-    <Image src="https://savepad.app/wp-content/uploads/Search.png" alt="Save feature" width={1024} height={578} layout="responsive" /><br></br>
 
-    <p>Regardless of what you add to Savepad — links, images, PDFs, code, components, or videos — Savepad automatically generates enough metadata to index all possible text related to that save.</p><br></br>
+    <p>Spaces, collections, nested collections, and tags not enough for you? Create custom views with advanced filtering for common operations to make Savepad even more useful for you. Simply search and filter for whatever you’re looking for, and click the “Save as Custom View” button.</p><br></br>
 
-    <p>Need to surface those obscure landing pages you remember saving that were related to Product Marketing, were Developer Tools, and had a design that caught your attention? Stack all those criteria to make sure it was Auth0 you were looking for as a reference!</p><br></br>
+    <p>Oh, and by default all spaces have a grid and list view with the option to select which data is always shown, to ensure that you’re getting the best possible browsing experience of your spaces.</p><br></br>
   </section>
 );
 

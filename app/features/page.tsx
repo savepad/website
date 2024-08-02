@@ -17,7 +17,6 @@ import AccountsFeature from './core-features/accounts';
 import CollaborationFeature from './core-features/collaboration';
 import TeamsFeature from './core-features/teams';
 
-
 // Formats Features imports
 import AudioFeature from './files-and-formats/audio';
 import CodeFeature from './files-and-formats/code';
@@ -184,7 +183,7 @@ const FeaturesPage = () => {
             <APIFeature />
             <IntegrationsFeature />
 
-            
+
           </div>
         </div>
       </section>

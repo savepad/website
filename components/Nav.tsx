@@ -15,11 +15,11 @@ const Nav: React.FC = () => {
 
   const menuItems = [
     {
-      title: 'Savepad',
-      path: '/features',
+      title: 'Product',
+      path: '/product',
       links: [
         { href: '/features', text: 'Features' },
-        { href: '/guides', text: 'User Guides' },
+        { href: '/user-guides', text: 'User Guides' },
         { href: '/changelog', text: 'Product Updates' },
         { href: 'https://savepad.struct.ai/', text: 'Support & Community' },
       ],

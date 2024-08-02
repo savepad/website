@@ -5,11 +5,13 @@ const LinksFeature = () => (
   <section id="links" className="mb-12 max-w-full">
     <h3>URLs & Links</h3><br></br>
 
-    <Image src="https://savepad.app/wp-content/uploads/Search.png" alt="Save feature" width={1024} height={578} layout="responsive" /><br></br>
+    <p>Resources, references, landing pages, ideas, articles, bookmarks, whatever the reason, Savepad is made to make your saved links shine. Whether you’re saving links for a project, or as a collaborative bookmark manager, all links get scraped to make sure they’re easy to find with all the applicable metadata, content, and context. URLs also get rich in-app previews to make them easy to navigate without ever leaving Savepad.</p><br></br>
 
-    <p>Regardless of what you add to Savepad — links, images, PDFs, code, components, or videos — Savepad automatically generates enough metadata to index all possible text related to that save.</p><br></br>
+    <p>Some URLs are more than others. While all URLs added to Savepad will be enriched with the basics (thumbnails, titles, descriptions, etc.) some other URLs need a little more love to make sure you find what you’re looking for in the future.</p><br></br>
 
-    <p>Need to surface those obscure landing pages you remember saving that were related to Product Marketing, were Developer Tools, and had a design that caught your attention? Stack all those criteria to make sure it was Auth0 you were looking for as a reference!</p><br></br>
+    <p>Saving a song from Spotify? We’ll try to bring along the artist name, album art, lyrics, and genre. Dropping a YouTube link to a video? Let’s try and bring the subtitles, channel details, and description so that you have all the context.</p><br></br>
+
+    <p>You get the idea.</p><br></br>
   </section>
 );
 

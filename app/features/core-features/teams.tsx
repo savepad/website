@@ -5,7 +5,7 @@ const TeamsFeature = () => (
   <section id="teams" className="mb-12 max-w-full">
     <h3>Teams</h3><br></br>
 
-    <Image src="https://savepad.app/wp-content/uploads/Search.png" alt="Save feature" width={1024} height={578} layout="responsive" /><br></br>
+  
 
     <p>Regardless of what you add to Savepad — links, images, PDFs, code, components, or videos — Savepad automatically generates enough metadata to index all possible text related to that save.</p><br></br>
 
