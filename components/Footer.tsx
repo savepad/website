@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <Link href="/">
               <Image src="/logo.svg" alt="Savepad Logo" width={150} height={40} />
             </Link>
-            <p className="mt-4">Collaborative Swipe File and Knowledge Base for growth teams.</p>
+            <p className="mt-4">Collaborative Swipe File and Knowledge Base for Growth Teams.</p>
           </div>
           <div></div>
           <div>
@@ -56,15 +56,15 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-700 pt-4 flex justify-between items-center">
-          <p>&copy; {currentYear} Savepad, All Rights Reserved</p>
+          <p>&copy; 2014 - Present, Savepad, All Rights Reserved</p>
           <div className="flex space-x-4">
-            <Link href="https://twitter.com/savepadapp">
+            <Link href="https://twitter.com/savepadapp" target="_blank">
               <FaTwitter className="text-gray-300 hover:text-gray-100" size={24} />
             </Link>
-            <Link href="https://linkedin.com/company/savepad">
+            <Link href="https://linkedin.com/company/savepad" target="_blank">
               <FaLinkedin className="text-gray-300 hover:text-gray-100" size={24} />
             </Link>
-            <Link href="/logos/Struct.svg" target="_blank">
+            <Link href="https://savepad.struct.ai/" target="_blank">
               <Image src="/logos/Struct.svg" alt="Struct" width={24} height={24} />
             </Link>
           </div>

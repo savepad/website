@@ -15,7 +15,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ tagline, heading, description, imageUrl, imageAlt, buttonLabel, buttonHref, buttonVariant }) => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center h-[90vh] text-left px-4 max-w-[1140px] mx-auto">
+    <section className="flex flex-col md:flex-row items-center justify-center min-h-[900px] text-left px-4 max-w-[1140px] mx-auto">
       <div className="md:w-1/2 w-full mb-8 md:mb-0">
         <p className="text-sm text-gray-300">{tagline}</p>
         <h1 className="text-4xl md:text-5xl font-normal font-outfit my-6">
