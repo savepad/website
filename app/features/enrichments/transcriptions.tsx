@@ -7,7 +7,7 @@ const TranscriptionsFeature = () => (
 
 
 
-    <p>For most files like audio, video, and documents uploaded to Savepad, we try our best to extract as much context as possible to make sure you find what you’re looking for. This could include things like subtitles, lyrics, articles, etc., It’s very much experimental at this stage, but we’re constantly improving how we approach this.</p><br></br>
+    <p>For most files like audio, video, and documents uploaded to Savepad, we try our best to extract as much context as possible to make sure you find what you&apos;re looking for. This could include things like subtitles, lyrics, articles, etc., It&apos;s very much experimental at this stage, but we&apos;re constantly improving how we approach this.</p><br></br>
   </section>
 );
 

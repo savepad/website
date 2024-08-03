@@ -6,7 +6,7 @@ const OcrFeature = () => (
     <h3>OCR - Image to Text</h3><br></br>
 
 
-    <p>If Savepad identifies any text in images uploaded, we’ll try our best to convert them into plain text to make it easy to find when you use our full-text search in your spaces.</p><br></br>
+    <p>If Savepad identifies any text in images uploaded, we&apos;ll try our best to convert them into plain text to make it easy to find when you use our full-text search in your spaces.</p><br></br>
 
   </section>
 );

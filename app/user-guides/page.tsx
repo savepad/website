@@ -19,6 +19,7 @@ const videoCards = [
     imageUrl: 'https://savepad.app/wp-content/uploads/Search.png',
     imageAlt: 'Manage',
     title: '2. Getting Started with Savepad',
+    description: "TL;DR? A swipe file is a collection of examples and references that you find inspiring and think are worth saving.",
     videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
   },
   {

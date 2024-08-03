@@ -8,7 +8,7 @@ const AccountsFeature = () => (
 
     <p>Your account is your permanent Savepad profile, available under the username you choose when signing up. Under this, you have a Personal workspace by default, following which you can create workspaces and collections as you please.</p><br></br>
 
-    <p>If you create new accounts, for your team, or your personal friends and family, you'll be the admin of this account and be able to invite others to collaborate with you by inviting their personal usernames into your team.</p><br></br>
+    <p>If you create new accounts, for your team, or your personal friends and family, you&apos;ll be the admin of this account and be able to invite others to collaborate with you by inviting their personal usernames into your team.</p><br></br>
 
   </section>
 );
