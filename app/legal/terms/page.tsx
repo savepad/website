@@ -7,7 +7,8 @@ import WallOfText from '../../../components/WallOfText';
 import Footer from '@/components/Footer';
 
 const termsContent = `
-Here be markdown
+VERY heavily inspired by [Posthog's TOS sans the memes](https://posthog.com/terms).
+
 `;
 
 const extractHeadings = (content: string) => {
