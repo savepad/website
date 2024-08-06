@@ -1,11 +1,60 @@
 import React from 'react';
 import Nav from '../../components/Nav';
 import Hero from '../../components/Hero';
-import ContentBlock from '@/components/ContentBlock';
+import CardGrid from '../../components/CardGrid';
+import Cta from '@/components/Cta';
 import Footer from '@/components/Footer';
 
 
 const PersonasPage: React.FC = () => {
+
+
+  const PersonasCards = [
+    {
+      imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png',
+      imageAlt: 'Manage',
+      title: 'Growth Teams',
+      description: "Collaborative swipe file and knowledge base for teams of marketers, designers, and devs.",
+      link: '/personas/growth-teams',
+    },
+    {
+      imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1715850632/Landing%20Pages/Personas/Creatives_and_Agencies_axpunw.png',
+      imageAlt: 'Collaborate',
+      title: 'Creatives & Designers',
+      description: "An immersive library of your inspiration and best work for you and your clients.",
+      link: '/personas/designers',
+    },
+    {
+      imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1715850632/Landing%20Pages/Personas/Creatives_and_Agencies_axpunw.png',
+      imageAlt: 'Find',
+      title: 'Developers',
+      description: "A curated repository of your examples, courses, notes, code, and references.",
+      link: '/personas/developers',
+    },
+    {
+      imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1715850632/Landing%20Pages/Personas/Creatives_and_Agencies_axpunw.png',
+      imageAlt: 'Collaborate',
+      title: 'Agencies',
+      description: "A curation of projects, references, designs, and more, to collaborate with clients.",
+      link: '/personas/agencies',
+    },
+    {
+      imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Online_Communities_mrmftr.png',
+      imageAlt: 'Find',
+      title: 'Online Communities',
+      description: "A snapshot of all the learnings and resources shared within your online communities.",
+      link: '/personas/online-communities',
+    },
+    {
+      imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Individuals_enhhvh.png',
+      imageAlt: 'Find',
+      title: 'You',
+      description: "A modern bookmark manager to keep private, or share with friends & family.",
+      link: '/personas/you',
+    },
+  ];
+
+
   return (
     <main>
       <Nav />
@@ -20,75 +69,16 @@ const PersonasPage: React.FC = () => {
         buttonVariant="primary"
       />
 
+<CardGrid cards={PersonasCards} columns={2} />
 
-      <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
-        imageAlt="For Growth Teams"
-        heading="Growth Teams"
+<Cta
+        title="Get started for free"
         paragraphs={[
-          "Much of our focus is on growth teams — that's marketers, designers, and developers working in tech.",
-          "Savepad's their collaborative swipe file and knowledge base to work on projects better together."
+          "Savepad's generous free tier gives you LIMITS.",
+          "Our first 250 waitlist users will get lifetime access to Savepad for free."
         ]}
-        buttonLink='/personas/growth-teams'
-        buttonText='Savepad for Growth Teams'
-      />
-      <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850632/Landing%20Pages/Personas/Creatives_and_Agencies_axpunw.png"
-        imageAlt="Creatives and Devs"
-        heading="Creatives & Designers"
-        paragraphs={[
-          "You often need to maintain a portfolio of references, experience, and designs, either for yourself or to collaborate with clients.",
-          "Savepad lets you build an immersive library of references, or a curation of your best work."
-        ]}
-        buttonLink='/personas/designers'
-        buttonText='Savepad for Designers'
-        reverse
-      />
-            <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850632/Landing%20Pages/Personas/Creatives_and_Agencies_axpunw.png"
-        imageAlt="Creatives and Devs"
-        heading="Developers"
-        paragraphs={[
-          "Ever needed a dumping ground for courses, examples, notes, components, snippets, and references?",
-          "With full support for URLs, files, assets, code, and notes, Savepad is your personal (or shared) repo for everything you want to save."
-        ]}
-        buttonLink='/personas/developers'
-        buttonText='Savepad for Developers'
-      />
-      <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850632/Landing%20Pages/Personas/Creatives_and_Agencies_axpunw.png"
-        imageAlt="Creatives and Devs"
-        heading="Agencies"
-        paragraphs={[
-          "You often need to maintain a portfolio of references, experience, and designs, either for yourself or to collaborate with clients.",
-          "Savepad lets you build an immersive library of references, or a curation of your best work."
-        ]}
-        buttonLink='/personas/agencies'
-        buttonText='Savepad for Agencies'
-        reverse
-      />
-      <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Online_Communities_mrmftr.png"
-        imageAlt="Online Communities"
-        heading="Online Communities"
-        paragraphs={[
-          "Many online communities run on platforms like Slack, with resources shared by hundreds of people over years.",
-          "Don't let them get buried or lose them to history limits. Create a searchable knowledge base for your community."
-        ]}
-        buttonLink='/personas/online-communities'
-        buttonText='Savepad for Community Owners'
-      />
-      <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Individuals_enhhvh.png"
-        imageAlt="For Individuals"
-        heading="You"
-        paragraphs={[
-          "Just looking for something like a modern bookmark manager or a place to save all the references and inspiration that you find online?",
-          "Save everything you care about. Invite friends and family, publish to the web, or keep it private. You do you."
-        ]}
-        buttonLink='/personas/you'
-        buttonText='Savepad for you'
-        reverse
+        buttonText="Sign Up for Free"
+        buttonHref="/signup"
       />
 
 <Footer />

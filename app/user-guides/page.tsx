@@ -36,14 +36,17 @@ const BlogPage: React.FC = () => {
     <main>
       <Nav />
       <Hero
-        tagline=""
-        heading="How to Savepad"
-        description="Quick videos to learn how Savepad works."
+        tagline="👾 User Guides"
+        heading="How to Savepad."
+        description="Bite-sized videos to get you familiar with all the capabilities of Savepad to become a pro."
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
         imageAlt="Personas"
+        buttonLabel="Create your free account"
+        buttonHref="/signup"
+        buttonVariant="primary"
       />
 
-      <VideoGrid videos={videoCards} columns={2} useShadowVideoCard={true} />
+      <VideoGrid videos={videoCards} columns={1} useShadowVideoCard />
 
       <Cta
         title="Get started for free"

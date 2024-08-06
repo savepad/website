@@ -46,7 +46,7 @@ p, span {
 }
 
 a {
-  @apply font-geist text-base leading-relaxed text-violet-700 hover:text-violet-500;
+  @apply font-geist text-base leading-relaxed text-violet-400 hover:text-violet-500;
 }
 
 .container {
