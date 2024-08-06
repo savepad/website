@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss';
 
+type ThemeFunction = (path: string) => string;
+
 const config: Config = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
@@ -39,7 +41,7 @@ const config: Config = {
         desktop: '1024px',
         xl: '1280px',
       },
-      typography: (theme) => ({
+      typography: (theme: ThemeFunction) => ({
         DEFAULT: {
           css: {
             color: theme('colors.gray.300'),
