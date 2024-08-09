@@ -59,7 +59,7 @@ const Nav: React.FC = () => {
         <div className="hidden md:flex justify-center space-x-8 w-1/2">
           {menuItems.map((item, index) => (
             <div key={index} className="relative group">
-             <Link href={item.path} className="text-gray-100 hover:text-violet-700">
+             <Link href={item.path} className="text-gray-100 hover:text-violet-500">
                 {item.title}
               </Link>
               <div className="absolute left-0 hidden mt-2 w-48 bg-zinc-950 bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg group-hover:block">
@@ -67,7 +67,7 @@ const Nav: React.FC = () => {
                   <Link
                     key={linkIndex}
                     href={link.href}
-                    className="block px-4 py-2 text-gray-100 hover:text-violet-700"
+                    className="block px-4 py-2 text-gray-100 hover:text-violet-500"
                   >
                     {link.text}
                   </Link>
@@ -112,7 +112,7 @@ const Nav: React.FC = () => {
                     <li key={linkIndex} className="mb-2">
                       <Link
                         href={link.href}
-                        className="text-gray-400 hover:text-violet-400"
+                        className="text-gray-400 hover:text-violet-500"
                         onClick={toggleMenu}
                       >
                         {link.text}
