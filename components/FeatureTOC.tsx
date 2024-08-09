@@ -16,7 +16,7 @@ interface TOCProps {
 }
 
 const FeatureTOC: React.FC<TOCProps> = ({ features }) => (
-  <aside className="top-4 md:w-1/4 hidden md:block px-4">
+  <aside className="top-32 md:w-1/4 hidden md:block px-4 sticky h-full">
     <nav>
       <h2 className="text-xl font-semibold mb-4 text-gray-600">On this page</h2>
       {features.map((category, index) => (

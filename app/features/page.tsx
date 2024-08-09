@@ -122,7 +122,7 @@ const FeaturesPage = () => {
       />
 
 <section className="relative max-w-[1140px] mx-auto">
-        <div className="container mx-auto max-w-[1140px] flex">
+        <div className="container mx-auto max-w-[1140px] flex relative">
           <FeatureTOC features={features} />
           <div className="md:w-3/4 w-full px-4">
 

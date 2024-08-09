@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-700 pt-4 flex justify-between items-center">
-          <p>&copy; 2014 - Present, Savepad, All Rights Reserved</p>
+          <p>&copy; 2024 - Present, Savepad, All Rights Reserved</p>
           <div className="flex space-x-4">
             <Link href="https://twitter.com/savepadapp" target="_blank">
               <FaTwitter className="text-gray-300 hover:text-gray-100" size={24} />
