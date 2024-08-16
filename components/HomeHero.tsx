@@ -16,7 +16,7 @@ const HomeHero: React.FC = () => {
         </p>
         <div className="mt-8 flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
           <Button label="Create your free account" variant="primary" icon={FaArrowRight} href="/signup" />
-          <Button label="Watch demos" variant="secondary" icon={FaPlay} href="/signup" />
+          <Button label="Watch demos" variant="secondary" icon={FaPlay} href="/user-guides" />
         </div>
         <p className="mt-8 text-xs leading-relaxed text-gray-400">
           Join 250+ marketers and makers on our closed beta!
