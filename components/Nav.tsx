@@ -48,7 +48,7 @@ const Nav: React.FC = () => {
   ];
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-opacity-70 bg-zinc-950 backdrop-blur-lg">
+    <nav className="fixed w-full top-0 z-50 bg-opacity-70 bg-zinc-950 backdrop-blur-md">
       <div className="container mx-auto max-w-[1440px] px-4 py-4 flex justify-between items-center">
         <div className="flex items-center w-1/4">
           <Link href="/">
@@ -62,7 +62,7 @@ const Nav: React.FC = () => {
              <Link href={item.path} className="text-gray-100 hover:text-violet-500">
                 {item.title}
               </Link>
-              <div className="absolute left-0 hidden mt-2 w-48 bg-zinc-950 bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg group-hover:block">
+              <div className="absolute left-0 hidden pt-4 pb-4 w-60 bg-zinc-950 bg-opacity-100 rounded shadow-lg group-hover:block">
                 {item.links.map((link, linkIndex) => (
                   <Link
                     key={linkIndex}
