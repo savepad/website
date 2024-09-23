@@ -19,7 +19,7 @@ export async function POST(req: Request) {
   const endpoint = `https://api.mailerlite.com/api/v2/groups/${GROUP_ID}/subscribers`;
 
   const requestOptions: RequestInit = {
-    method: 'POST', // Ensure the method is a string
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'X-MailerLite-ApiKey': API_KEY,
