@@ -10,6 +10,7 @@ import Faq from '../components/Faq';
 import Wall from '../components/Wall';
 import Cta from '../components/Cta';
 import Footer from '@/components/Footer';
+import WaitlistHero from '@/components/WaitlistHero'
 
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -139,7 +140,8 @@ const HomePage: React.FC = () => {
     <main>
 
       <Nav />
-      <HomeHero />
+      {/* <HomeHero /> */}
+      <WaitlistHero />
       {/* <Wall /> */}
       <Breakpoint
         header="Time to bring some structure to your chaos."
