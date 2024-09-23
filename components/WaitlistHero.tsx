@@ -91,7 +91,7 @@ const WaitlistHero: React.FC = () => {
         )}
 
         <p className="mt-8 text-xs leading-relaxed text-gray-400">
-          ℹ️ We&apos;re currently in closed beta with our waitlist users to get the app ready for our public launch!
+          ℹ️ We&apos;re currently in closed beta with our waitlist users to get Savepad ready for our public launch!
         </p>
 
         <div className="mt-8 flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
