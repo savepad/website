@@ -36,7 +36,7 @@ const BlogPage: React.FC = () => {
 <CardGrid cards={blogCards} columns={2} useShadowCard={true} />
 
 
-
+{/* 
       <Cta
         title="Get started for free"
         paragraphs={[
@@ -45,7 +45,7 @@ const BlogPage: React.FC = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
 
 
     <Footer />

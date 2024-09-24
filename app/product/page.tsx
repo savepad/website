@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '@/components/Hero';
+import CenterHero from '@/components/CenterHero';
 import Nav from '../../components/Nav';
 import CardGrid from '../../components/CardGrid';
 import Cta from '../../components/Cta';
@@ -43,17 +43,15 @@ const ProductPage: React.FC = () => {
 
       <Nav />
       
-      <Hero
-        tagline=""
+      <CenterHero
+        tagline="Welcome to Savepad"
         heading="Savepad 101"
         description="Everything you need to know about the product."
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
-        imageAlt="Personas"
       />
       
 <CardGrid cards={productCards} columns={2} useShadowCard={false} />
 
-<Cta
+{/* <Cta
         title="Get started for free"
         paragraphs={[
           "Savepad's generous free tier gives you LIMITS.",
@@ -61,7 +59,7 @@ const ProductPage: React.FC = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
 
 <Footer />
     </main>

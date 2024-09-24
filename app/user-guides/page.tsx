@@ -62,14 +62,14 @@ const BlogPage: React.FC = () => {
         description="Bite-sized videos to get you familiar with all the capabilities of Savepad. The UI and flows are being constantly updated while we're in beta!"
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
         imageAlt="Personas"
-        buttonLabel="Create your free account"
-        buttonHref="/signup"
-        buttonVariant="primary"
+        // buttonLabel="Create your free account"
+        // buttonHref="/signup"
+        // buttonVariant="primary"
       />
 
       <VideoGrid videos={videoCards} columns={2} useShadowVideoCard />
 
-      <Cta
+      {/* <Cta
         title="Get started for free"
         paragraphs={[
           "Savepad's generous free tier gives you LIMITS.",
@@ -77,7 +77,7 @@ const BlogPage: React.FC = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
 
       <Footer />
     </main>

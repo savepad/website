@@ -49,9 +49,9 @@ const CommunityPage: React.FC = () => {
         description="Empower your online community with a curated knowledge base. Preserve, organize, and access vital resources efficiently for everyone."
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
         imageAlt="Personas"
-        buttonLabel="Get started for free"
-        buttonHref="/signup"
-        buttonVariant="primary"
+        // buttonLabel="Get started for free"
+        // buttonHref="/signup"
+        // buttonVariant="primary"
       />
 
 <CardGrid cards={yesnoCards} columns={2} useShadowCard={true} />
@@ -84,7 +84,7 @@ const CommunityPage: React.FC = () => {
 
       <CardGrid cards={whyCards} columns={3} useShadowCard={true} />
 
-      <Cta
+      {/* <Cta
         title="Get started for free"
         paragraphs={[
           "Savepad's generous free tier gives you LIMITS.",
@@ -92,7 +92,7 @@ const CommunityPage: React.FC = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
 
 
     <Footer />

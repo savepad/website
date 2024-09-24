@@ -208,7 +208,7 @@ const HomePage: React.FC = () => {
       />
 <Faq faqs={faqData} />
 
-<Cta
+{/* <Cta
         title="Get started for free"
         paragraphs={[
           "Savepad's generous free tier gives you LIMITS.",
@@ -216,7 +216,7 @@ const HomePage: React.FC = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
 
 <Footer />
     </main>

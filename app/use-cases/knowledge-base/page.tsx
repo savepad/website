@@ -49,9 +49,9 @@ const KnowledgePage: React.FC = () => {
         description="Most cross-functional teams of marketers, designers, and developers struggle to stay on the same page when collaborating on projects together. Don’t be one of them."
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
         imageAlt="Personas"
-        buttonLabel="Get started for free"
-        buttonHref="/signup"
-        buttonVariant="primary"
+        // buttonLabel="Get started for free"
+        // buttonHref="/signup"
+        // buttonVariant="primary"
       />
 
 <CardGrid cards={yesnoCards} columns={2} useShadowCard={true} />
@@ -105,7 +105,7 @@ const KnowledgePage: React.FC = () => {
 
       <CardGrid cards={whyCards} columns={3} useShadowCard={true} />
 
-      <Cta
+      {/* <Cta
         title="Get started for free"
         paragraphs={[
           "Savepad's generous free tier gives you LIMITS.",
@@ -113,7 +113,7 @@ const KnowledgePage: React.FC = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
 
 
     <Footer />

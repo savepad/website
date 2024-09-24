@@ -25,7 +25,7 @@ const Nav: React.FC = () => {
       ],
     },
     {
-      title: 'Use Cases',
+      title: 'For What',
       path: '/use-cases',
       links: [
         { href: '/use-cases/swipe-file', text: 'Collaborative Swipe File' },
@@ -34,14 +34,14 @@ const Nav: React.FC = () => {
       ],
     },
     {
-      title: 'Personas',
+      title: 'For Whom',
       path: '/personas',
       links: [
         { href: '/personas/growth-teams', text: 'Growth Teams' },
         { href: '/personas/designers', text: 'Creatives & Designers' },
         { href: '/personas/developers', text: 'Developers' },
         { href: '/personas/agencies', text: 'Agencies' },
-        { href: '/personas/online-communities', text: 'Online Community Owners' },
+        { href: '/personas/online-communities', text: 'Online Communities' },
         { href: '/personas/you', text: 'Individuals' },
       ],
     },
@@ -78,7 +78,7 @@ const Nav: React.FC = () => {
         </div>
 
         <div className="hidden md:flex w-1/4 justify-end">
-          <Button label="Launch app" variant="primary" href="/signup" icon={FaArrowRight} />
+          <Button label="Launch app" variant="primary" href="https://app.savepad.dev/" icon={FaArrowRight} />
         </div>
 
         <div className="md:hidden flex items-center">
@@ -99,7 +99,7 @@ const Nav: React.FC = () => {
             </button>
           </div>
           <div className="mt-0 pt-2 p-2 w-full items-center justify-center flex bg-violet-700">
-            <Button label="Create your free account" variant="primary" href="/signup" icon={FaArrowRight} />
+            <Button label="Create your free account" variant="primary" href="https://app.savepad.dev/" icon={FaArrowRight} />
           </div>
           <div className="flex bg-zinc-950 flex-col space-y-4 px-4 py-4">
             {menuItems.map((item, index) => (

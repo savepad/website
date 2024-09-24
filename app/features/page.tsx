@@ -116,9 +116,9 @@ const FeaturesPage = () => {
         description="Explore all the capabilities and features that make Savepad your ideal collaborative swipe file."
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
         imageAlt="Personas"
-        buttonLabel="Get started for free"
-        buttonHref="/signup"
-        buttonVariant="primary"
+        // buttonLabel="Get started for free"
+        // buttonHref="/signup"
+        // buttonVariant="primary"
       />
 
 <section className="relative max-w-[1140px] mx-auto">
@@ -188,7 +188,7 @@ const FeaturesPage = () => {
         </div>
       </section>
 
-      <Cta
+      {/* <Cta
         title="Get started for free"
         paragraphs={[
           "Savepad's generous free tier gives you LIMITS.",
@@ -196,7 +196,7 @@ const FeaturesPage = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
 
       <Footer />
     </main>
