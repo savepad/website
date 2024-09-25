@@ -9,12 +9,16 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-zinc-950 text-gray-300">
       <div className="container mx-auto max-w-[1440px] px-4 py-12">
+      <div className="mb-12 border-t border-gray-700 pt-4 flex justify-between items-center"></div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/">
               <Image src="/logo.svg" alt="Savepad Logo" width={150} height={40} />
             </Link>
-            <p className="mt-4">Collaborative Swipe File and Knowledge Base for Growth Teams.</p>
+            <p className="mt-4">The collaborative Swipe File and Knowledge Base.</p>
+            <ul>
+              <li><Link href="https://app.savepad.dev/" className="text-gray-400 hover:text-violet-400">Create your free account</Link></li>
+            </ul>
           </div>
           <div></div>
           <div>
@@ -29,6 +33,7 @@ const Footer: React.FC = () => {
               <li><Link href="/personas/growth-teams" className="text-gray-400 hover:text-violet-400">Growth Teams</Link></li>
               <li><Link href="/personas/designers" className="text-gray-400 hover:text-violet-400">Creatives & Designers</Link></li>
               <li><Link href="/personas/developers" className="text-gray-400 hover:text-violet-400">Developers</Link></li>
+              <li><Link href="/personas/agencies" className="text-gray-400 hover:text-violet-400">Agencies</Link></li>
               <li><Link href="/personas/online-communities" className="text-gray-400 hover:text-violet-400">Online Community Owners</Link></li>
               <li><Link href="/personas/you" className="text-gray-400 hover:text-violet-400">Individuals</Link></li>
             </ul>
@@ -42,6 +47,7 @@ const Footer: React.FC = () => {
               <li><Link href="/guides" className="text-gray-400 hover:text-violet-400">User Guides</Link></li>
               <li><Link href="/changelog" className="text-gray-400 hover:text-violet-400">Product Updates</Link></li>
               <li><Link href="/roadmap" className="text-gray-400 hover:text-violet-400">Roadmap</Link></li>
+              <li><Link href="/no-ai" className="text-gray-400 hover:text-violet-400">No AI</Link></li>
             </ul>
             <h4 className="mb-2 mt-8">Savepad</h4>
             <ul>

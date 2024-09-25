@@ -53,14 +53,14 @@ const WaitlistHero: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center h-[90vh] text-center px-4">
+    <section className="flex flex-col items-center justify-center h-[800px] text-center px-4 max-w-[1140px] mx-auto">
       <div className="max-w-[625px] w-full">
         <p className="text-sm text-gray-400">Currently in closed beta 🪄</p>
         <h1 className="text-5xl md:text-6xl font-semibold font-outfit mt-2">
           Helping growth teams get their sh*t together
         </h1>
         <p className="mt-4 text-base md:text-medium leading-loose">
-          Savepad is the collaborative swipe file to store, organize, reference, share, and actually use all the resources and examples you have.
+          Savepad is the collaborative knowledge base to store, organize, reference, share, and actually use all the resources and examples you find online.
         </p>
 
         {!submitted ? (
@@ -91,7 +91,7 @@ const WaitlistHero: React.FC = () => {
         )}
 
         <p className="mt-8 text-xs leading-relaxed text-gray-400">
-          ℹ️ We&apos;re currently in closed beta with our waitlist users to get Savepad ready for our public launch!
+          ⚙️ We&apos;re currently in closed beta with our waitlist users to get Savepad ready for our public launch!
         </p>
 
         <div className="mt-8 flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">

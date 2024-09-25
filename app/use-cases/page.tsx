@@ -1,9 +1,9 @@
 import React from 'react';
 import Nav from '../../components/Nav';
-import Hero from '../../components/Hero';
 import CardGrid from '../../components/CardGrid';
 import Cta from '@/components/Cta';
 import Footer from '@/components/Footer';
+import CenterHero from '@/components/CenterHero';
 
 
 const UseCasesPage: React.FC = () => {
@@ -37,20 +37,15 @@ const UseCasesPage: React.FC = () => {
   return (
     <main>
       <Nav />
-      <Hero
+      <CenterHero
         tagline="What's it for?"
         heading="Powerful Alone. Better Together."
-        description="Savepad is a collaborative reference management platform built for growth teams. But that's not all it's for."
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
-        imageAlt="Use Cases"
-        buttonLabel="Get started for free"
-        buttonHref="/signup"
-        buttonVariant="primary"
+        description="Savepad is the collaborative reference management platform built for growth teams. But that's not all it's for."
       />
 
 <CardGrid cards={UseCaseCards} columns={2} />
 
-<Cta
+{/* <Cta
         title="Get started for free"
         paragraphs={[
           "Savepad's generous free tier gives you LIMITS.",
@@ -58,7 +53,7 @@ const UseCasesPage: React.FC = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
       
 
 <Footer />

@@ -49,9 +49,9 @@ const YouPage: React.FC = () => {
         description="Savepad is your all-in-one resource manager to simplify your life. From notes to bookmarks. organize and curate effortlessly, by yourself, or with friends and family."
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
         imageAlt="Personas"
-        buttonLabel="Get started for free"
-        buttonHref="/signup"
-        buttonVariant="primary"
+        // buttonLabel="Get started for free"
+        // buttonHref="/signup"
+        // buttonVariant="primary"
       />
 
 <CardGrid cards={yesnoCards} columns={2} useShadowCard={true} />
@@ -102,7 +102,7 @@ const YouPage: React.FC = () => {
 
       <CardGrid cards={whyCards} columns={3} useShadowCard={true} />
 
-      <Cta
+      {/* <Cta
         title="Get started for free"
         paragraphs={[
           "Savepad's generous free tier gives you LIMITS.",
@@ -110,7 +110,7 @@ const YouPage: React.FC = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
 
 
     <Footer />

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Nav from '../../components/Nav';
-import Hero from '../../components/Hero';
+import CenterHero from '@/components/CenterHero';
 import Footer from '@/components/Footer';
 import CardGrid from '@/components/CardGrid';
 import Cta from '@/components/Cta';
@@ -25,18 +25,16 @@ const BlogPage: React.FC = () => {
   return (
     <main>
       <Nav />
-      <Hero
+      <CenterHero
         tagline=""
         heading="Blog"
-        description="Posts and updates from Savepad."
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
-        imageAlt="Personas"
+        description="Updates and thoughts (but let's be honest, just marketing people doing some SEO stuff) on reference management from the Savepad crew."
       />
 
 <CardGrid cards={blogCards} columns={2} useShadowCard={true} />
 
 
-
+{/* 
       <Cta
         title="Get started for free"
         paragraphs={[
@@ -45,7 +43,7 @@ const BlogPage: React.FC = () => {
         ]}
         buttonText="Sign Up for Free"
         buttonHref="/signup"
-      />
+      /> */}
 
 
     <Footer />
