@@ -6,6 +6,7 @@ import Hero from '../../components/Hero';
 import Footer from '@/components/Footer';
 import VideoGrid from '@/components/VideoGrid';
 import Cta from '@/components/Cta';
+import Breakpoint from '@/components/Breakpoint';
 
 const videoCards = [
   {
@@ -67,7 +68,16 @@ const BlogPage: React.FC = () => {
         // buttonVariant="primary"
       />
 
-      <VideoGrid videos={videoCards} columns={2} useShadowVideoCard />
+<div className="flex flex-1 items-center justify-center">
+        <Breakpoint
+          header="Coming Soon..."
+          texts={[
+            "We're working on publishing some quick demos of the platform to let you have a smooth self-serve onboarding experience. Stay tuned!"
+          ]}
+        />
+      </div>
+
+      {/* <VideoGrid videos={videoCards} columns={2} useShadowVideoCard /> */}
 
       {/* <Cta
         title="Get started for free"

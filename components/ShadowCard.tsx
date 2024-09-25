@@ -33,7 +33,7 @@ const ShadowCard: React.FC<ShadowCardProps> = ({ imageUrl, imageAlt, title, desc
           <h4 className="font-normal mb-4 mt-4">{title}</h4>
           <p className="mb-4">{description}</p>
           {link && (
-            <Link href={link} className="text-violet-700 hover:text-violet-900 transition duration-300">
+            <Link href={link} className="text-violet-400 hover:text-white transition duration-300">
               Learn more
             </Link>
           )}

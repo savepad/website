@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import HomeHero from '../components/HomeHero';
 import Nav from '../components/Nav';
 // import HomeSplash from '../components/HomeSplash';
@@ -54,47 +55,14 @@ const HomePage: React.FC = () => {
 
   const useCaseCards = [
     {
-      title: 'Collaborative Swipe File',
-      description: "Marketers, designers, and developers, finally collaborating together without lost context.",
-      link: '/',
+      title: 'What it does',
+      description: "Collaborative swipe file, knowledge base, or a simple shared bookmark manager, here's the common use-cases we've built Savepad for.",
+      link: '/use-cases',
     },
     {
-      title: 'Reference Management',
-      description: "With powerful indexing and full-text search, all the references you’ve ever found are within reach.",
-      link: '/',
-    },
-    {
-      title: 'Collaborative Swipe File',
-      description: "Marketers, designers, and developers, finally collaborating together without lost context.",
-      link: '/',
-    },
-    {
-      title: 'Reference Management',
-      description: "With powerful indexing and full-text search, all the references you’ve ever found are within reach.",
-      link: '/',
-    },
-  ];
-
-  const personaCards = [
-    {
-      title: 'Growth Teams',
-      description: "It’s time to stop losing your hair managing resources between 50 shades of tools.",
-      link: '/',
-    },
-    {
-      title: 'Creatives & Devs',
-      description: "Designers and devs can easily collaborate on projects with their teams and clients.",
-      link: '/',
-    },
-    {
-      title: 'Community Owners',
-      description: "Maintain resources within your online community as a searchable knowledge base indefinitely.",
-      link: '/',
-    },
-    {
-      title: 'You',
-      description: "Want to save and collaborate with friends, family, or your partner on things? Sign up!",
-      link: '/',
+      title: 'Who uses Savepad',
+      description: "Originally designed for Growth Teams, we've seen designers, developers, agencies, and communities find some great value too.",
+      link: '/personas',
     },
   ];
 
@@ -142,6 +110,7 @@ const HomePage: React.FC = () => {
       <Nav />
       {/* <HomeHero /> */}
       <WaitlistHero />
+      <HomeProblem />
       {/* <Wall /> */}
       <Breakpoint
         header="Time to bring some structure to your chaos."
@@ -150,8 +119,6 @@ const HomePage: React.FC = () => {
           "Then this one's for you 🥂"
         ]}
       />
-      <HomeProblem />
-
       {/* <Wall /> */}
 
       <ContentBlock
@@ -183,21 +150,18 @@ const HomePage: React.FC = () => {
 <CardGrid cards={splashCard} columns={1} />
 <CardGrid cards={featureCards} columns={2} />
 
+<section className="mx-auto text-center items-center justify-center py-8">
+<Link href="/features" className="text-violet-400 hover:text-white transition duration-300">Explore all Features →</Link>
+</section>
+
 <Breakpoint
-        header="For your next landing page. Or ad. Or Biryani party."
+        header="For your next landing page. Or ad. Or Ramen party."
         texts={[
-          "Here’s some of the common use-cases that Savepad is built for.",
+          "Whatever you need it for, Savepad's built to make sure you never feel stumped again.",
         ]}
       />
 <CardGrid cards={useCaseCards} columns={2} />
 
-<Breakpoint
-        header="So that you never feel stumped again."
-        texts={[
-          "Here’s some of the people we feel would benefit the most from Savepad.",
-        ]}
-      />
-<CardGrid cards={personaCards} columns={2} />
 
 <Breakpoint
         header="Questions? Answers"

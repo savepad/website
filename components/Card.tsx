@@ -33,8 +33,8 @@ const Card: React.FC<CardProps> = ({ imageUrl, imageAlt, title, description, lin
           <h3 className="font-normal mb-4 mt-4">{title}</h3>
           <p className="mb-4">{description}</p>
           {link && (
-            <Link href={link} className="text-violet-700 hover:text-violet-900 transition duration-300">
-              Learn more
+            <Link href={link} className="text-violet-400 hover:text-white transition duration-300">
+              Learn more →
             </Link>
           )}
         </div>
