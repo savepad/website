@@ -7,7 +7,7 @@ import WallOfText from '../../../components/WallOfText';
 import Footer from '@/components/Footer';
 
 const securityContent = `
-Here be markdown
+We're working on it... 
 `;
 
 const extractHeadings = (content: string) => {
