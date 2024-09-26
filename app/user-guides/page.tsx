@@ -72,7 +72,7 @@ const BlogPage: React.FC = () => {
         <Breakpoint
           header="Coming Soon..."
           texts={[
-            "We're working on publishing some quick demos of the platform to let you have a smooth self-serve onboarding experience. Stay tuned!"
+            "The first round of videos were 💩 so we're working on re-publishing some quick demos of the platform to let you have a smooth self-serve onboarding experience. Stay tuned!"
           ]}
         />
       </div>
