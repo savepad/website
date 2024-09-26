@@ -22,7 +22,7 @@ const CookieConsent: React.FC = () => {
   return (
     <div className="px-6 py-6 fixed bottom-8 left-8 w-[600px] bg-zinc-950 p-4 rounded-lg shadow-lg z-50 flex flex-col md:flex-row md:items-center md:space-x-4 text-gray-300">
       <div>
-        <h3 className="text-xl pb-2">If we did things right, then no 🍪s for you!</h3>
+        <h3 className="text-xl pb-2">No 🍪s for you!</h3>
         <p className="mt-1 mb-4">
           This website uses no third-party cookies. If we did things correctly then have no tracking, no personalization, nothing. Should things change, we will update this, and you.
         </p>
