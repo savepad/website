@@ -3,12 +3,14 @@
 import React, { useState } from 'react';
 import Button from './Button';
 import { FaArrowRight, FaPlay } from 'react-icons/fa';
+import { Turnstile } from '@marsidev/react-turnstile';
 
 const WaitlistHero: React.FC = () => {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState('');
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -27,6 +29,11 @@ const WaitlistHero: React.FC = () => {
       return;
     }
 
+    if (!captchaToken) {
+      setError('Please complete the CAPTCHA.');
+      return;
+    }
+
     setLoading(true);
     setError('');
 
@@ -36,7 +43,7 @@ const WaitlistHero: React.FC = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, captchaToken }),
       });
 
       if (response.ok) {
@@ -79,8 +86,7 @@ const WaitlistHero: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`inline-flex items-center justify-center rounded bg-violet-700 text-gray-100 px-8 py-3 hover:bg-violet-800 transition duration-300 ${loading ? 'opacity-50 cursor-not-allowed' : ''
-                }`}
+              className={`inline-flex items-center justify-center rounded bg-violet-700 text-gray-100 px-8 py-3 hover:bg-violet-800 transition duration-300 ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
               {loading ? 'Submitting...' : 'Get access'}
               {!loading && <FaArrowRight className="ml-2" />}
@@ -89,6 +95,13 @@ const WaitlistHero: React.FC = () => {
         ) : (
           <p className="mt-4 text-sm text-green-600">Thanks for signing up! We&apos;ll be in touch with more details soon.</p>
         )}
+
+        <div className="mt-4">
+          <Turnstile
+            siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY as string}
+            onSuccess={(token: string) => setCaptchaToken(token)}
+          />
+        </div>
 
         <p className="mt-8 text-xs leading-relaxed text-gray-400">
           ⚙️ We&apos;re currently in closed beta with our waitlist users to get Savepad ready for our public launch!
