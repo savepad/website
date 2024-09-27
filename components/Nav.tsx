@@ -81,7 +81,7 @@ const Nav: React.FC = () => {
           </div>
 
           
-          <div className="mt-0 pt-2 p-2 w-full items-center justify-center flex bg-violet-700">
+          <div className="mt-0 pt-2 p-2 h-[30vh] w-full items-center justify-center flex bg-zinc-950">
             <Button label="Create your free account" variant="primary" href="https://app.savepad.dev/" icon={FaArrowRight} />
           </div>
         </div>

@@ -20,19 +20,19 @@ const CookieConsent: React.FC = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="px-6 py-6 fixed bottom-8 left-8 w-[600px] bg-zinc-950 p-4 rounded-lg shadow-lg z-50 flex flex-col md:flex-row md:items-center md:space-x-4 text-gray-300">
+    <div className="fixed bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-auto max-w-full md:max-w-[600px] bg-zinc-950 p-4 md:p-6 rounded-lg shadow-lg z-50 flex flex-col md:flex-row md:items-center md:space-x-4 text-gray-300">
       <div>
-        <h3 className="text-xl pb-2">No 🍪s for you!</h3>
-        <p className="mt-1 mb-4">
-          This website uses no third-party cookies. If we did things correctly then have no tracking, no personalization, nothing. Should things change, we will update this, and you.
+        <h3 className="text-lg md:text-xl pb-2">No 🍪s for you!</h3>
+        <p className="text-sm md:text-base mt-1 mb-4">
+          At the moment, we don&apos;t share any data with third parties. Should this change, we will update this.
         </p>
-        <button
+      </div>
+      <button
         onClick={handleAccept}
-        className="w-[250px] mt-4 md:mt-0 bg-violet-700 text-gray-100 px-4 py-2 rounded hover:bg-violet-800 transition duration-300"
+        className="w-full md:w-auto bg-violet-700 text-gray-100 px-4 py-2 rounded hover:bg-violet-800 transition duration-300"
       >
         Sounds good!
       </button>
-      </div>
     </div>
   );
 };
