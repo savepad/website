@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Nav from '../../components/Nav';
-import Hero from '@/components/Hero';
+import CenterHero from '@/components/CenterHero';
 import WallOfText from '../../components/WallOfText';
 import Footer from '@/components/Footer';
 
@@ -24,19 +24,7 @@ import Footer from '@/components/Footer';
 // ___
 
 const ChangelogContent = `
-#### Date, year
-![Release Image](https://savepad.app/wp-content/uploads/Saves.png)
-## Title of the release!
-TLDR of the release.
-
-### 💎 What's New
-- Thing — Description
-- Thing — Description
-
-### 🛠️ Improvements and Fixes
-- Thing — Description
-- Thing — Description
-___
+Will be published as soon as we're launching the waitlist! Stay tuned...
 `;
 
 const extractHeadings = (content: string) => {
@@ -62,15 +50,10 @@ const ChangelogPage: React.FC = () => {
   return (
     <main>
       <Nav />
-      <Hero
-        tagline="🐙 Product Updates"
-        heading="Changelog."
-        description="Snapshot of all the (major) updates on the product"
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850633/Landing%20Pages/Personas/Growth_Teams_cyw32z.png"
-        imageAlt="Personas"
-        // buttonLabel="Create your free account"
-        // buttonHref="/signup"
-        // buttonVariant="primary"
+      <CenterHero
+        tagline="🐙 Changelog"
+        heading="Product Updates"
+        description=""
       />
       <div>
           <div>

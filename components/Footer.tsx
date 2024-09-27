@@ -24,10 +24,11 @@ const Footer: React.FC = () => {
           <div>
           <h4 className="mb-2">Product</h4>
             <ul>
+              <li><Link href="/product" className="text-gray-400 hover:text-violet-400">Savepad 101</Link></li>
               <li><Link href="/features" className="text-gray-400 hover:text-violet-400">Features</Link></li>
+              <li><Link href="/guides" className="text-gray-400 hover:text-violet-400">How to Savepad</Link></li>
               <li><Link href="/use-cases" className="text-gray-400 hover:text-violet-400">Use Cases</Link></li>
               <li><Link href="/personas" className="text-gray-400 hover:text-violet-400">Personas</Link></li>
-              <li><Link href="/guides" className="text-gray-400 hover:text-violet-400">User Guides</Link></li>
               <li><Link href="/changelog" className="text-gray-400 hover:text-violet-400">Product Updates</Link></li>
             </ul>
             <ul className="mt-6">

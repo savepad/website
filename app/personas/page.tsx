@@ -78,8 +78,8 @@ const PersonasPage: React.FC = () => {
       />
 
 <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
-        imageAlt="Before Savepad"
+        imageUrl="/images/personas/Growth Teams.png"
+        imageAlt="For Growth Teams"
         heading="Bring your team's ideas together."
         paragraphs={[
           "Landing pages, ads, videos, case studies, resources, pricing pages, demo flows, features, pop-ups, newsletters, memes, email flows, 🤯.",
@@ -97,8 +97,8 @@ const PersonasPage: React.FC = () => {
       />
 
 <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
-        imageAlt="Before Savepad"
+        imageUrl="/images/personas/Devs and Designers.png"
+        imageAlt="For Devs and Designers"
         heading="Delight yourself & your clients every time."
         paragraphs={[
           "Devs and designers, whether as freelancers or as part of agencies, often have multiple tools and workflows for each project and client.",
@@ -117,8 +117,8 @@ const PersonasPage: React.FC = () => {
       />
 
 <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
-        imageAlt="Before Savepad"
+        imageUrl="/images/personas/Communities.png"
+        imageAlt="For Communities"
         heading="Create something powerful when coming together."
         paragraphs={[
           "Online communities have seen countless resources shared over years, many lost because of chat history limits, closed communities, or 404s.",
@@ -136,8 +136,8 @@ const PersonasPage: React.FC = () => {
       />
 
 <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
-        imageAlt="Before Savepad"
+        imageUrl="/images/personas/Personal.png"
+        imageAlt="For You"
         heading="Save all the things that make you go hmmm"
         paragraphs={[
           "Most browsers have a very old-school way of handling bookmarks, just folders to dump links. No collaboration, no sharing, nothing new.",

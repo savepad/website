@@ -6,89 +6,36 @@ import Cta from '@/components/Cta';
 import Footer from '@/components/Footer';
 import Breakpoint from '@/components/Breakpoint';
 import ContentBlock from '@/components/ContentBlock';
+import Link from 'next/link';
 
 
 const UseCasesPage: React.FC = () => {
 
-  const SwipeCards = [
+  const UseCaseCards = [
     {
       title: 'Save Everything',
-      description: "Save and reference URLs, documents, images, screenshots, emails, code, or anything else you find worth swiping.",
+      description: "Links, documents, images, videos, emails, code, notes... Save anything and everything.",
     },
     {
       title: 'Find Anything',
-      description: "Looking for “Raycast homepage” but remember only “LP with gradient CTA”? No sweat.",
+      description: "Looking for something specific but only remember vague keywords? No sweat.",
     },
     {
       title: 'Share and collaborate',
-      description: "Invite your team and they will be able to view or edit your workspaces and collections as you choose.",
+      description: "Invite others to collaborate on your workspaces or publish them to the web if you want.",
     },
     {
       title: 'Swipe on the go',
-      description: "With apps for browser, mobile, desktop, and email, Savepad is good to go whenever you are.",
+      description: "With apps for browser, mobile, desktop, and email, Savepad is good to go wherever you are.",
     },
     {
       title: 'Well Structured',
       description: "Organize spaces, collections, and tags as you’d like to keep your references within reach.",
     },
     {
-      title: 'Familiar Workflows',
-      description: "Collect and update your Savepad using your daily workflows like Slack, email, screenshot, and more.",
-    },
-  ];
-
-  const KnowledgeCards = [
-    {
-      title: 'Save Everything',
-      description: "Save and reference URLs, documents, images, screenshots, emails, code, or anything else you find worth swiping.",
-    },
-    {
-      title: 'Find Anything',
-      description: "Looking for “Raycast homepage” but remember only “LP with gradient CTA”? No sweat.",
-    },
-    {
-      title: 'Share and collaborate',
-      description: "Invite your team and they will be able to view or edit your workspaces and collections as you choose.",
-    },
-    {
-      title: 'Swipe on the go',
-      description: "With apps for browser, mobile, desktop, and email, Savepad is good to go whenever you are.",
-    },
-    {
-      title: 'Well Structured',
-      description: "Organize spaces, collections, and tags as you’d like to keep your references within reach.",
-    },
-    {
-      title: 'Familiar Workflows',
-      description: "Collect and update your Savepad using your daily workflows like Slack, email, screenshot, and more.",
-    },
-  ];
-
-  const BookmarkCards = [
-    {
-      title: 'Save Everything',
-      description: "Save and reference URLs, documents, images, screenshots, emails, code, or anything else you find worth swiping.",
-    },
-    {
-      title: 'Find Anything',
-      description: "Looking for “Raycast homepage” but remember only “LP with gradient CTA”? No sweat.",
-    },
-    {
-      title: 'Share and collaborate',
-      description: "Invite your team and they will be able to view or edit your workspaces and collections as you choose.",
-    },
-    {
-      title: 'Swipe on the go',
-      description: "With apps for browser, mobile, desktop, and email, Savepad is good to go whenever you are.",
-    },
-    {
-      title: 'Well Structured',
-      description: "Organize spaces, collections, and tags as you’d like to keep your references within reach.",
-    },
-    {
-      title: 'Familiar Workflows',
-      description: "Collect and update your Savepad using your daily workflows like Slack, email, screenshot, and more.",
-    },
+      title: 'Stay in sync',
+      description: 'Savepad syncs all the time to ensure your private and shared resources are updated instantly.',
+    }
   ];
 
 
@@ -115,7 +62,7 @@ const UseCasesPage: React.FC = () => {
       />
 
       <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
+        imageUrl="/images/use-cases/Swipe_1.png"
         imageAlt="Before Savepad"
         heading="Take your team from good to great."
         paragraphs={[
@@ -124,7 +71,7 @@ const UseCasesPage: React.FC = () => {
       />
 
       <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
+        imageUrl="/images/use-cases/Swipe_2.png"
         imageAlt="Before Savepad"
         heading="Work Better. Together."
         paragraphs={[
@@ -134,8 +81,6 @@ const UseCasesPage: React.FC = () => {
         reverse
       />
 
-<CardGrid cards={SwipeCards} columns={3} useShadowCard />
-
 <Breakpoint
         header="Shared Knowledge Base"
         texts={[
@@ -144,7 +89,7 @@ const UseCasesPage: React.FC = () => {
       />
 
       <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
+        imageUrl="/images/use-cases/Knowledge_1.png"
         imageAlt="Before Savepad"
         heading="Incredible people share incredible things."
         paragraphs={[
@@ -153,7 +98,7 @@ const UseCasesPage: React.FC = () => {
       />
 
       <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
+        imageUrl="/images/use-cases/Knowledge_2.png"
         imageAlt="Before Savepad"
         heading="Give your community a lasting knowledge base"
         paragraphs={[
@@ -161,8 +106,6 @@ const UseCasesPage: React.FC = () => {
         ]}
         reverse
       />
-
-<CardGrid cards={KnowledgeCards} columns={3} useShadowCard />
 
 <Breakpoint
         header="Shared Bookmark Manager"
@@ -172,7 +115,7 @@ const UseCasesPage: React.FC = () => {
       />
 
       <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
+        imageUrl="/images/use-cases/Bookmark_1.png"
         imageAlt="Before Savepad"
         heading="Save everything you care about."
         paragraphs={[
@@ -181,7 +124,7 @@ const UseCasesPage: React.FC = () => {
       />
 
       <ContentBlock
-        imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
+        imageUrl="/images/use-cases/Bookmark_2.png"
         imageAlt="Before Savepad"
         heading="And share it with those who matter."
         paragraphs={[
@@ -190,7 +133,18 @@ const UseCasesPage: React.FC = () => {
         reverse
       />
 
-<CardGrid cards={BookmarkCards} columns={3} useShadowCard />
+<Breakpoint
+        header="And then some"
+        texts={[
+          "All use-cases are enabled by some powerful features under the hood that make Savepad a great collaborative platform for you."
+        ]}
+      />
+
+<CardGrid cards={UseCaseCards} columns={3} useShadowCard />
+
+<section className="mx-auto text-center items-center justify-center py-8">
+<Link href="/features" className="text-violet-400 hover:text-white transition duration-300">Explore all Features →</Link>
+</section>
 
 {/* <Cta
         title="Get started for free"
