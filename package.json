@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@marsidev/react-turnstile": "^1.0.2",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/typography": "^0.5.13",
     "cloudinary": "^2.2.0",

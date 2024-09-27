@@ -3,35 +3,10 @@ import { NextResponse } from 'next/server';
 export const runtime = 'edge';
 
 export async function POST(req: Request) {
-  const { email, turnstileToken } = await req.json();
+  const { email } = await req.json();
 
-  if (!email || !turnstileToken) {
-    return NextResponse.json({ error: 'Email and Turnstile token are required' }, { status: 400 });
-  }
-
-  const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY;
-  if (!TURNSTILE_SECRET_KEY) {
-    return NextResponse.json({ error: 'Turnstile secret key is missing' }, { status: 500 });
-  }
-
-  const verifyUrl = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
-  const verifyBody = new URLSearchParams({
-    secret: TURNSTILE_SECRET_KEY,
-    response: turnstileToken,
-  });
-
-  try {
-    const verifyResponse = await fetch(verifyUrl, {
-      method: 'POST',
-      body: verifyBody,
-    });
-    const verifyData = await verifyResponse.json();
-
-    if (!verifyData.success) {
-      return NextResponse.json({ error: 'Invalid Turnstile token' }, { status: 400 });
-    }
-  } catch (error) {
-    return NextResponse.json({ error: 'Failed to verify Turnstile token' }, { status: 500 });
+  if (!email) {
+    return NextResponse.json({ error: 'Email is required' }, { status: 400 });
   }
 
   const API_KEY = process.env.MAILERLITE_API_KEY;
