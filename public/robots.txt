@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Host
+Host: https://www.savepad.app
+
+# Sitemaps
+Sitemap: https://www.savepad.app/sitemap.xml
