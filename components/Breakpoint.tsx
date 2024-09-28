@@ -10,8 +10,8 @@ interface BreakpointProps {
 
 const Breakpoint: React.FC<BreakpointProps> = ({ header, texts, buttons }) => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-[500px]">
-    <div className="max-w-[600px] py-24 text-center">
+    <section className="flex flex-col items-center justify-center min-h-[400px]">
+    <div className="max-w-[600px] py-12 text-center">
       {header && <h2 className="text-3xl md:text-5xl font-normal mb-8">{header}</h2>}
       {texts && texts.map((text, index) => (
         <p key={index} className="mt-4">{text}</p>

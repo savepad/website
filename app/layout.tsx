@@ -1,5 +1,6 @@
 import './globals.css';
 import { ReactNode } from 'react';
+import CookieConsent from '@/components/CookieConsent';
 
 export const metadata = {
   title: 'Savepad',
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         {children}
       </body>
+      <CookieConsent />
     </html>
   );
 }

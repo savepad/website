@@ -16,47 +16,31 @@ const Footer: React.FC = () => {
               <Image src="/logo.svg" alt="Savepad Logo" width={150} height={40} />
             </Link>
             <p className="mt-4">The collaborative Swipe File and Knowledge Base.</p>
-            <ul>
+            <ul className="mt-4">
               <li><Link href="https://app.savepad.dev/" className="text-gray-400 hover:text-violet-400">Create your free account</Link></li>
             </ul>
           </div>
           <div></div>
           <div>
-            <h4 className="mb-2">Use Cases</h4>
+          <h4 className="mb-2">Product</h4>
             <ul>
-              <li><Link href="/use-cases/swipe-file" className="text-gray-400 hover:text-violet-400">Collaborative Swipe File</Link></li>
-              <li><Link href="/use-cases/knowledge-base" className="text-gray-400 hover:text-violet-400">Knowledge Base</Link></li>
-              <li><Link href="/use-cases/bookmark-manager" className="text-gray-400 hover:text-violet-400">Shared Bookmark Manager</Link></li>
+              <li><Link href="/features" className="text-gray-400 hover:text-violet-400">Features</Link></li>
+              <li><Link href="/user-guides" className="text-gray-400 hover:text-violet-400">How to Savepad</Link></li>
+              <li><Link href="/use-cases" className="text-gray-400 hover:text-violet-400">Use Cases</Link></li>
+              <li><Link href="/personas" className="text-gray-400 hover:text-violet-400">Personas</Link></li>
+              <li><Link href="/changelog" className="text-gray-400 hover:text-violet-400">Product Updates</Link></li>
             </ul>
-            <h4 className="mb-2 mt-8">Savepad For</h4>
-            <ul>
-              <li><Link href="/personas/growth-teams" className="text-gray-400 hover:text-violet-400">Growth Teams</Link></li>
-              <li><Link href="/personas/designers" className="text-gray-400 hover:text-violet-400">Creatives & Designers</Link></li>
-              <li><Link href="/personas/developers" className="text-gray-400 hover:text-violet-400">Developers</Link></li>
-              <li><Link href="/personas/agencies" className="text-gray-400 hover:text-violet-400">Agencies</Link></li>
-              <li><Link href="/personas/online-communities" className="text-gray-400 hover:text-violet-400">Online Community Owners</Link></li>
-              <li><Link href="/personas/you" className="text-gray-400 hover:text-violet-400">Individuals</Link></li>
-            </ul>
-          </div>
+            </div>
           
           <div>
-            <h4 className="mb-2">Product</h4>
-            <ul>
-              <li><Link href="/blog/what-is-a-swipe-file" className="text-gray-400 hover:text-violet-400">What is a Swipe File?</Link></li>
-              <li><Link href="/features" className="text-gray-400 hover:text-violet-400">Features</Link></li>
-              <li><Link href="/guides" className="text-gray-400 hover:text-violet-400">User Guides</Link></li>
-              <li><Link href="/changelog" className="text-gray-400 hover:text-violet-400">Product Updates</Link></li>
-              <li><Link href="/roadmap" className="text-gray-400 hover:text-violet-400">Roadmap</Link></li>
-              <li><Link href="/no-ai" className="text-gray-400 hover:text-violet-400">No AI</Link></li>
-            </ul>
-            <h4 className="mb-2 mt-8">Savepad</h4>
+            <h4 className="mb-2">Savepad</h4>
             <ul>
               <li><Link href="/about" className="text-gray-400 hover:text-violet-400">About</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-violet-400">Blog</Link></li>
-              <li><Link href="/legal/privacy-policy" className="text-gray-400 hover:text-violet-400">Privacy Policy</Link></li>
+              {/* <li><Link href="/legal/privacy-policy" className="text-gray-400 hover:text-violet-400">Privacy Policy</Link></li>
               <li><Link href="/legal/terms" className="text-gray-400 hover:text-violet-400">Terms of Use</Link></li>
               <li><Link href="/legal/security" className="text-gray-400 hover:text-violet-400">Security & Compliance</Link></li>
-              <li><Link href="/legal/cookie-policy" className="text-gray-400 hover:text-violet-400">Cookie Policy</Link></li>
+              <li><Link href="/legal/cookie-policy" className="text-gray-400 hover:text-violet-400">Cookie Policy</Link></li> */}
               <li><Link href="https://savepad.struct.ai/" className="text-gray-400 hover:text-violet-400">Support & Community</Link></li>
             </ul>
           </div>
