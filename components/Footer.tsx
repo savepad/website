@@ -24,15 +24,11 @@ const Footer: React.FC = () => {
           <div>
           <h4 className="mb-2">Product</h4>
             <ul>
-              <li><Link href="/product" className="text-gray-400 hover:text-violet-400">Savepad 101</Link></li>
               <li><Link href="/features" className="text-gray-400 hover:text-violet-400">Features</Link></li>
               <li><Link href="/user-guides" className="text-gray-400 hover:text-violet-400">How to Savepad</Link></li>
               <li><Link href="/use-cases" className="text-gray-400 hover:text-violet-400">Use Cases</Link></li>
               <li><Link href="/personas" className="text-gray-400 hover:text-violet-400">Personas</Link></li>
               <li><Link href="/changelog" className="text-gray-400 hover:text-violet-400">Product Updates</Link></li>
-            </ul>
-            <ul className="mt-6">
-              <li><Link href="/blog/what-is-a-swipe-file" className="text-gray-400 hover:text-violet-400">What is a Swipe File?</Link></li>
             </ul>
             </div>
           
@@ -41,10 +37,10 @@ const Footer: React.FC = () => {
             <ul>
               <li><Link href="/about" className="text-gray-400 hover:text-violet-400">About</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-violet-400">Blog</Link></li>
-              <li><Link href="/legal/privacy-policy" className="text-gray-400 hover:text-violet-400">Privacy Policy</Link></li>
+              {/* <li><Link href="/legal/privacy-policy" className="text-gray-400 hover:text-violet-400">Privacy Policy</Link></li>
               <li><Link href="/legal/terms" className="text-gray-400 hover:text-violet-400">Terms of Use</Link></li>
               <li><Link href="/legal/security" className="text-gray-400 hover:text-violet-400">Security & Compliance</Link></li>
-              <li><Link href="/legal/cookie-policy" className="text-gray-400 hover:text-violet-400">Cookie Policy</Link></li>
+              <li><Link href="/legal/cookie-policy" className="text-gray-400 hover:text-violet-400">Cookie Policy</Link></li> */}
               <li><Link href="https://savepad.struct.ai/" className="text-gray-400 hover:text-violet-400">Support & Community</Link></li>
             </ul>
           </div>

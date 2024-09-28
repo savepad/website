@@ -73,7 +73,7 @@ const FeaturesPage = () => {
         { id: 'documents', title: 'Files & Documents' },
         { id: 'notes', title: 'Notes' },
         { id: 'code', title: 'Code' },
-        { id: 'emails', title: 'Emails' },
+        // { id: 'emails', title: 'Emails' },
         { id: 'audio', title: 'Audio' },
         { id: 'others', title: 'Other Formats' },
       ],
@@ -85,24 +85,24 @@ const FeaturesPage = () => {
         { id: 'trash', title: 'Trash & Deletes' },
         { id: 'bulk', title: 'Bulk Operations' },
         { id: 'customviews', title: 'Custom Views & Filters' },
-        { id: 'importsexports', title: 'Imports & Exports' },
-        { id: 'ocr', title: 'OCR' },
-        { id: 'transcription', title: 'Transcriptions' },
+        // { id: 'importsexports', title: 'Imports & Exports' },
+        // { id: 'ocr', title: 'OCR' },
+        // { id: 'transcription', title: 'Transcriptions' },
       ],
     },
-    {
-      category: 'Apps & Integrations',
-      features: [
-        { id: 'webapp', title: 'Savepad for Web' },
-        { id: 'chrome', title: 'Chrome Extension' },
-        { id: 'ios', title: 'Savepad for iOS' },
-        { id: 'macos', title: 'Savepad for MacOS' },
-        { id: 'android', title: 'Savepad for Android' },
-        { id: 'windows', title: 'Savepad for Windows' },
-        { id: 'api', title: 'Savepad API' },
-        { id: 'integrations', title: 'Apps & Integrations' },
-      ],
-    },
+    // {
+    //   category: 'Apps & Integrations',
+    //   features: [
+    //     { id: 'webapp', title: 'Savepad for Web' },
+    //     { id: 'chrome', title: 'Chrome Extension' },
+    //     { id: 'ios', title: 'Savepad for iOS' },
+    //     { id: 'macos', title: 'Savepad for MacOS' },
+    //     { id: 'android', title: 'Savepad for Android' },
+    //     { id: 'windows', title: 'Savepad for Windows' },
+    //     { id: 'api', title: 'Savepad API' },
+    //     { id: 'integrations', title: 'Apps & Integrations' },
+    //   ],
+    // },
   ];
 
 
@@ -125,6 +125,8 @@ const FeaturesPage = () => {
         <div className="container mx-auto max-w-[1140px] flex relative">
           <FeatureTOC features={features} />
           <div className="md:w-3/4 w-full px-4">
+
+<div className="pb-8"><p>ℹ️ Features are subject to change rapidly as we gather initial feedback during our beta phase.</p></div>
 
             {/* Core Features */}
             <h2 className="">Core Features</h2>
@@ -152,7 +154,7 @@ const FeaturesPage = () => {
             <DocumentsFeature />
             <NotesFeature />
             <CodeFeature />
-            <EmailsFeature />
+            {/* <EmailsFeature /> */}
             <AudioFeature />
             <OthersFeature />
 
@@ -165,13 +167,13 @@ const FeaturesPage = () => {
             <TrashFeature />
             <BulkFeature />
             <CustomViewsFeature />
-            <ImportsExportsFeature />
+            {/* <ImportsExportsFeature />
             <OcrFeature />
-            <TranscriptionsFeature />
+            <TranscriptionsFeature /> */}
 
 
             {/* Extensibility */}
-            <h2 className="">Extensibility, Apps, & Integrations</h2>
+            {/* <h2 className="">Extensibility, Apps, & Integrations</h2>
             <p className="mb-8">The fundamentals of Savepad that make it the ideal swipe file and knowledge base for you.</p>
 
             <WebAppFeature />
@@ -181,7 +183,7 @@ const FeaturesPage = () => {
             <AndroidFeature />
             <WindowsFeature />
             <APIFeature />
-            <IntegrationsFeature />
+            <IntegrationsFeature /> */}
 
 
           </div>

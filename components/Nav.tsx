@@ -32,10 +32,10 @@ const Nav: React.FC = () => {
             User Guides
           </Link>
           <Link href="/use-cases" className="text-gray-100 hover:text-violet-400">
-            What it&apos;s for
+            Use Cases
           </Link>
           <Link href="/personas" className="text-gray-100 hover:text-violet-400">
-            Who it&apos;s for
+            Personas
           </Link>
         </div>
 
