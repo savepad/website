@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -50,6 +50,9 @@ const Footer: React.FC = () => {
           <div className="flex space-x-4">
             <Link href="https://twitter.com/savepadapp" target="_blank">
               <FaTwitter className="text-gray-300 hover:text-gray-100" size={24} />
+            </Link>
+            <Link href="https://github.com/savepad/website" target="_blank">
+              <FaGithub className="text-gray-300 hover:text-gray-100" size={24} />
             </Link>
             <Link href="https://linkedin.com/company/savepad" target="_blank">
               <FaLinkedin className="text-gray-300 hover:text-gray-100" size={24} />
