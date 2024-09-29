@@ -14,27 +14,27 @@ const UseCasesPage: React.FC = () => {
   const UseCaseCards = [
     {
       title: 'Save Everything',
-      description: "Links, documents, images, videos, emails, code, notes... Save anything and everything.",
+      description: "Links, docs, pics, vids, emails, code, notes... Save anything and everything.",
     },
     {
       title: 'Find Anything',
-      description: "Looking for something specific but only remember vague keywords? No sweat.",
+      description: "Looking for something but only remember vague keywords? No sweat.",
     },
     {
       title: 'Share and collaborate',
-      description: "Invite others to collaborate on your workspaces or publish them to the web if you want.",
+      description: "Invite others to your workspaces or publish them to the web.",
     },
     {
       title: 'Swipe on the go',
-      description: "With apps for browser, mobile, desktop, and email, Savepad is good to go wherever you are.",
+      description: "With native apps and integrations, Savepad is with you everywhere.",
     },
     {
       title: 'Well Structured',
-      description: "Organize spaces, collections, and tags as you’d like to keep your references within reach.",
+      description: "Organize workspaces, collections, and tags as you’d like.",
     },
     {
       title: 'Stay in sync',
-      description: 'Savepad syncs all the time to ensure your private and shared resources are updated instantly.',
+      description: 'Ensure your private and shared resources are in sync across apps.',
     }
   ];
 
@@ -66,7 +66,7 @@ const UseCasesPage: React.FC = () => {
         imageAlt="Before Savepad"
         heading="Take your team from good to great."
         paragraphs={[
-          "Savepad lets growth teams maintain structured references in a single platform rather than retaining a mess of inspiration sprawled between multiple sheets, Notions, Slacks, emails, and other tools."
+          "Savepad lets you maintain references in a single platform rather than retaining a mess of inspiration sprawled between multiple sheets, Notions, Slacks, emails, and other tools."
         ]}
       />
 
@@ -93,7 +93,8 @@ const UseCasesPage: React.FC = () => {
         imageAlt="Before Savepad"
         heading="Incredible people share incredible things."
         paragraphs={[
-          "Most online communities have a wealth of experiences, insights, and references shared over years. Don’t lose them just because you can’t access chat history beyond a point."
+          "Online communities have a wealth of experience, insights, and references shared over time.",
+          "Don’t lose them just because you can’t access chat history beyond 90 days or something."
         ]}
       />
 
@@ -102,7 +103,8 @@ const UseCasesPage: React.FC = () => {
         imageAlt="Before Savepad"
         heading="Give your community a lasting knowledge base"
         paragraphs={[
-          "Instantly curate shared resources into a personal or shared space for maintaining references."
+          "Instantly curate shared resources into a personal or shared space for maintaining references.",
+          "Give your community access by inviting them, or keep a public read-only URL of your spaces."
         ]}
         reverse
       />
@@ -128,7 +130,7 @@ const UseCasesPage: React.FC = () => {
         imageAlt="Before Savepad"
         heading="And share it with those who matter."
         paragraphs={[
-          "Bring together great content from across the web, share it with those that need access to it, whether for work or personal use, and keep it in sync with your browser as required."
+          "Bring together what you like from across the web, share it with those who matter, and keep it in sync with your browser."
         ]}
         reverse
       />
