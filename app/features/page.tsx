@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 import Cta from '@/components/Cta';
 import FeatureTOC from '@/components/FeatureTOC';
+import Banner from '@/components/Banner';
 
 // Core Features imports
 import SaveFeature from './core-features/save';
@@ -126,7 +127,13 @@ const FeaturesPage = () => {
           <FeatureTOC features={features} />
           <div className="md:w-3/4 w-full px-4">
 
-<div className="pb-8"><p>ℹ️ Features are subject to change rapidly as we gather initial feedback during our beta phase.</p></div>
+<div>
+      <Banner
+        variant="info"
+        title=""
+        message="ℹ️ Features are subject to change rapidly as we gather initial feedback during our beta phase."
+      />
+    </div>
 
             {/* Core Features */}
             <h2 className="">Core Features</h2>
