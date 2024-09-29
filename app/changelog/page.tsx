@@ -5,6 +5,7 @@ import Nav from '../../components/Nav';
 import CenterHero from '@/components/CenterHero';
 import WallOfText from '../../components/WallOfText';
 import Footer from '@/components/Footer';
+import Banner from '@/components/Banner';
 
 // Add the most recent release on top
 // Also, follow this format for consistency with a line between each
@@ -24,7 +25,7 @@ import Footer from '@/components/Footer';
 // ___
 
 const ChangelogContent = `
-Will be published as soon as we're launching the waitlist! Stay tuned...
+
 `;
 
 const extractHeadings = (content: string) => {
@@ -55,6 +56,15 @@ const ChangelogPage: React.FC = () => {
         heading="Product Updates"
         description=""
       />
+      <section className="mx-auto px-4 pb-4 max-w-[750px]">
+      <div>
+      <Banner
+        variant="info"
+        title=""
+        message="Stay tuned for our first product update as we open up the waitlist."
+      />
+      </div>
+      </section>
       <div>
           <div>
             <WallOfText content={ChangelogContent} />
