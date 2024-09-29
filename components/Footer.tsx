@@ -38,9 +38,7 @@ const Footer: React.FC = () => {
               <li><Link href="/about" className="text-gray-400 hover:text-violet-400">About</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-violet-400">Blog</Link></li>
               {/* <li><Link href="/legal/privacy-policy" className="text-gray-400 hover:text-violet-400">Privacy Policy</Link></li>
-              <li><Link href="/legal/terms" className="text-gray-400 hover:text-violet-400">Terms of Use</Link></li>
-              <li><Link href="/legal/security" className="text-gray-400 hover:text-violet-400">Security & Compliance</Link></li>
-              <li><Link href="/legal/cookie-policy" className="text-gray-400 hover:text-violet-400">Cookie Policy</Link></li> */}
+              <li><Link href="/legal/terms" className="text-gray-400 hover:text-violet-400">Terms of Use</Link></li> */}
               <li><Link href="https://savepad.struct.ai/" className="text-gray-400 hover:text-violet-400">Support & Community</Link></li>
             </ul>
           </div>
