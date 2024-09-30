@@ -110,8 +110,9 @@ const HomePage: React.FC = () => {
       <Nav />
       {/* <HomeHero /> */}
       <WaitlistHero />
+            {/* <Wall /> */}
       <HomeProblem />
-      {/* <Wall /> */}
+
       <Breakpoint
         header="Time to bring some structure to your chaos."
         texts={[
@@ -119,8 +120,6 @@ const HomePage: React.FC = () => {
           "Then this one's for you 🥂"
         ]}
       />
-      {/* <Wall /> */}
-
       <ContentBlock
         imageUrl="https://res.cloudinary.com/savepad-web/image/upload/v1715850637/Landing%20Pages/Homepage/Before_Savepad_saogxb.png"
         imageAlt="Before Savepad"

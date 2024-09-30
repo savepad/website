@@ -5,6 +5,7 @@ import Nav from '../../components/Nav';
 import CenterHero from '@/components/CenterHero';
 import WallOfText from '../../components/WallOfText';
 import Footer from '@/components/Footer';
+import Banner from '@/components/Banner';
 
 
 const AboutContent = `
@@ -33,7 +34,11 @@ If you’ve got an idea for Savepad or a feature request, [let us know](https://
 Savepad is committed to providing the best user experience with as little tracking and advertising as possible. We’re not selling any data to third parties, nor are we adding any weird trackers that’ll creep on you throughout the internet.
 
 As we build out the website and product, we’ll constantly update this to make sure we’re being transparent using simple terminology every time we make changes to our Privacy and Terms pages.
+
 `;
+
+// You can access these pages on our [Privacy Policy](/legal/privacy-policy) and [Terms of Service](/legal/terms) pages.
+
 
 const extractHeadings = (content: string) => {
   const regex = /^(#{2,3})\s+(.*)$/gm;
@@ -68,6 +73,7 @@ const AboutPage: React.FC = () => {
             <WallOfText content={AboutContent} />
           </div>
         </div>
+        
         <Footer />
     </main>
   );
