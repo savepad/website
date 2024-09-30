@@ -57,7 +57,7 @@ const Nav: React.FC = () => {
         <div className="md:hidden h-screen items-center text-center bg-zinc-950 fixed inset-0 z-40 flex flex-col justify-between pt-4">
           <div className="flex justify-between items-center bg-zinc-950 w-full pb-8 px-4">
             <Link href="/">
-              <Image src="/logo.svg" alt="Logo" width={100} height={40} />
+              <Image src="/logo.svg" alt="Logo" width={120} height={40} />
             </Link>
             <button onClick={toggleMenu} className="text-gray-100 bg-zinc-950 focus:outline-none">
               <FaTimes size={24} className="bg-zinc-950" />
