@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Modal from 'react-modal';
 import { FaPlay } from 'react-icons/fa';
@@ -15,6 +15,17 @@ interface VideoCardProps {
 
 const VideoCard: React.FC<VideoCardProps> = ({ imageUrl, imageAlt, title, description, videoUrl, singleColumn, imageLeft }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const appElement = document.getElementById('__next');
+      if (appElement) {
+        Modal.setAppElement(appElement);
+      }
+      setIsMounted(true);
+    }
+  }, []);
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -24,12 +35,16 @@ const VideoCard: React.FC<VideoCardProps> = ({ imageUrl, imageAlt, title, descri
     setModalIsOpen(false);
   };
 
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <>
       <div className={`rounded-lg bg-gradient-to-br from-zinc-900 to-zinc-950 p-12 flex ${singleColumn ? 'flex-col md:flex-row' : 'flex-col'} ${singleColumn && imageLeft ? 'md:flex-row-reverse' : ''} min-h-[500px]`}>
         {imageUrl && imageAlt && (
           <div className={`w-full ${singleColumn ? 'md:w-1/2' : ''} flex justify-center relative`}>
-            <div className="relative w-full h-full pb-[56.25%]">
+            <div className="border-violet-950 rounded-lg border relative w-full h-full pb-[56.25%]">
               <Image
                 src={imageUrl}
                 alt={imageAlt}
@@ -52,28 +67,29 @@ const VideoCard: React.FC<VideoCardProps> = ({ imageUrl, imageAlt, title, descri
           </div>
         </div>
       </div>
-
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Video Modal"
-        className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center"
-        overlayClassName="fixed inset-0 bg-black bg-opacity-75"
-      >
-        <div className="relative w-full max-w-3xl">
-          <iframe
-            className="w-full h-[315px]"
-            src={videoUrl}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title={title}
-          ></iframe>
-          <button onClick={closeModal} className="absolute top-2 right-2 text-white text-2xl">
-            &times;
-          </button>
-        </div>
-      </Modal>
+      {isMounted && (
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Video Modal"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center"
+          overlayClassName="fixed inset-0 bg-black bg-opacity-75"
+        >
+          <div className="relative w-full max-w-3xl">
+            <iframe
+              className="w-full h-[35vh]"
+              src={videoUrl}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title={title}
+            ></iframe>
+            <button onClick={closeModal} className="absolute top-2 right-2 text-white text-2xl">
+              &times;
+            </button>
+          </div>
+        </Modal>
+      )}
     </>
   );
 };
