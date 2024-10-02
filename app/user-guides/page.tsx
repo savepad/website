@@ -50,18 +50,25 @@ const GuidesPage: React.FC = () => {
         />
       </div>
 
-
-      <VideoGrid videos={videoCards} columns={2} useShadowVideoCard />
-
       <section className="mx-auto px-4 pb-4 max-w-[750px]">
+      <div>
+      <Banner
+        variant="info"
+        title=""
+        message="These video walkthroughs are made keeping Growth Teams/Marketers in context, but the same principles apply regardless of your use case!"
+      />
+      </div>
       <div>
       <Banner
         variant="success"
         title=""
-        message="Although the videos are hosted on YouTube, we're using YouTube's privacy-enhanced mode."
+        message="The videos are hosted using YouTube's privacy-enhanced mode."
       />
       </div>
       </section>
+
+      <VideoGrid videos={videoCards} columns={2} useShadowVideoCard />
+
 
       {/* <Cta
         title="Get started for free"
