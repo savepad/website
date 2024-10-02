@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -45,15 +45,18 @@ const Footer: React.FC = () => {
         </div>
         <div className="mt-12 border-t border-gray-700 pt-4 flex justify-between items-center">
           <p>&copy; 2024 - Present, Savepad, All Rights Reserved</p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 mt-6">
             <Link href="https://twitter.com/savepadapp" target="_blank">
               <FaTwitter className="text-gray-300 hover:text-gray-100" size={24} />
             </Link>
-            <Link href="https://github.com/savepad/website" target="_blank">
-              <FaGithub className="text-gray-300 hover:text-gray-100" size={24} />
-            </Link>
             <Link href="https://linkedin.com/company/savepad" target="_blank">
               <FaLinkedin className="text-gray-300 hover:text-gray-100" size={24} />
+            </Link>
+            <Link href="https://www.youtube.com/@savepad" target="_blank">
+              <FaYoutube className="text-gray-300 hover:text-gray-100" size={24} />
+            </Link>
+            <Link href="https://github.com/savepad/website" target="_blank">
+              <FaGithub className="text-gray-300 hover:text-gray-100" size={24} />
             </Link>
             <Link href="https://savepad.struct.ai/" target="_blank">
               <Image src="/logos/Struct.svg" alt="Struct" width={24} height={24} />
