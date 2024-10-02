@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Modal from 'react-modal';
 import { FaPlay } from 'react-icons/fa';
 
@@ -53,6 +52,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ imageUrl, imageAlt, title, descri
           </div>
         </div>
       </div>
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -61,7 +61,14 @@ const VideoCard: React.FC<VideoCardProps> = ({ imageUrl, imageAlt, title, descri
         overlayClassName="fixed inset-0 bg-black bg-opacity-75"
       >
         <div className="relative w-full max-w-3xl">
-          <video src={videoUrl} controls className="w-full" />
+          <iframe
+            className="w-full h-[315px]"
+            src={videoUrl}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title={title}
+          ></iframe>
           <button onClick={closeModal} className="absolute top-2 right-2 text-white text-2xl">
             &times;
           </button>
