@@ -58,7 +58,7 @@ const GuidesPage: React.FC = () => {
       <Banner
         variant="success"
         title=""
-        message="Although the videos are hosted on YouTube, we're using YouTube's privacy-enhanced mode to prevent setting cookies."
+        message="Although the videos are hosted on YouTube, we're using YouTube's privacy-enhanced mode."
       />
       </div>
       </section>
