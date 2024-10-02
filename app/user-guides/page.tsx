@@ -11,18 +11,46 @@ import Banner from '@/components/Banner';
 
 const videoCards = [
   {
-    imageUrl: '/images/user-guides/Creating-Workspaces.png',
-    imageAlt: 'Manage',
-    title: 'Creating workspaces',
-    description: "A walkthrough of creating your first workspaces in Savepad.",
-    videoUrl: 'https://www.youtube-nocookie.com/embed/8G7vLJcbByA',
+    imageUrl: '/images/user-guides/workspaces-collections-tags.png',
+    imageAlt: 'Workspaces',
+    title: 'Workspaces, Collections, & Tags',
+    description: "A look into creating your first workspaces in Savepad, and organizing them with collections and tags.",
+    videoUrl: 'https://www.youtube-nocookie.com/embed/qF0stRwCf6s',
   },
   {
-    imageUrl: '/images/user-guides/Creating-Workspaces.png',
-    imageAlt: 'Manage',
-    title: 'Creating collections & tags',
-    description: "Establishing some structure and organization with collections and tags.",
-    videoUrl: 'https://www.youtube-nocookie.com/embed/8G7vLJcbByA',
+    imageUrl: '/images/user-guides/links.png',
+    imageAlt: 'Links',
+    title: 'Working with Links & URLs',
+    description: "Add links to Savepag, and enrich them with as much or as little context as you'd like to never lose them.",
+    videoUrl: 'https://www.youtube-nocookie.com/embed/8paV5GMO-0Y',
+  },
+  {
+    imageUrl: '/images/user-guides/notes-code.png',
+    imageAlt: 'Notes',
+    title: 'Working with Notes & Code',
+    description: "Use a rich-text editor with full markdown and code support to add additional context to your collections",
+    videoUrl: 'https://www.youtube-nocookie.com/embed/B70icKQ15ak',
+  },
+  {
+    imageUrl: '/images/user-guides/media-files.png',
+    imageAlt: 'Media',
+    title: 'Working with Media & Files',
+    description: "Images, videos, audio, PDFs, documents, decks - upload whatever you want into your spaces.",
+    videoUrl: 'https://www.youtube-nocookie.com/embed/90zi3lkgqPg',
+  },
+  {
+    imageUrl: '/images/user-guides/misc.png',
+    imageAlt: 'Misc',
+    title: 'Common Workflows',
+    description: "A quick look into some ways to make your experience easier, with filters, sorting, backlog, settings, etc.",
+    videoUrl: 'https://www.youtube-nocookie.com/embed/vBVO-B4qqBM',
+  },
+  {
+    imageUrl: '/images/user-guides/projects.png',
+    imageAlt: 'Projects',
+    title: 'Getting Collaboration Ready',
+    description: "A walkthrough on how you'd set up a new homepage kickoff example before inviting your team.",
+    videoUrl: 'https://www.youtube-nocookie.com/embed/vBVO-B4qqBM',
   },
 ];
 
@@ -50,6 +78,15 @@ const GuidesPage: React.FC = () => {
         />
       </div>
 
+      <section className="mx-auto px-4 pb-4 max-w-[750px]">
+      <div>
+      <Banner
+        variant="info"
+        title=""
+        message="These video walkthroughs are made keeping Growth Teams/Marketers in context, but the same principles apply regardless of your use case!"
+      />
+      </div>
+      </section>
 
       <VideoGrid videos={videoCards} columns={2} useShadowVideoCard />
 
@@ -58,10 +95,18 @@ const GuidesPage: React.FC = () => {
       <Banner
         variant="success"
         title=""
-        message="Although the videos are hosted on YouTube, we're using YouTube's privacy-enhanced mode."
+        message="The videos are hosted using YouTube's privacy-enhanced mode."
+      />
+      </div>
+      <div>
+      <Banner
+        variant="warning"
+        title=""
+        message="The product will be rapidly evolving based on feedback during the beta stages! We'll try our best to catch up with keeping the videos up to date 😅"
       />
       </div>
       </section>
+
 
       {/* <Cta
         title="Get started for free"

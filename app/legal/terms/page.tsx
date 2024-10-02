@@ -67,7 +67,7 @@ const TermsPage: React.FC = () => {
       <Banner
         variant="warning"
         title=""
-        message="⚠️ This page is a work-in-progress and is being constantly updated as we're transitioning into a public Beta based on early feedback from our Waitlist users."
+        message="This page is a work-in-progress and is being constantly updated as we're transitioning into a public Beta based on early feedback from our Waitlist users."
       />
       </div>
       </section>

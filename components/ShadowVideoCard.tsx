@@ -77,7 +77,7 @@ const ShadowVideoCard: React.FC<ShadowVideoCardProps> = ({ imageUrl, imageAlt, t
         >
           <div className="relative w-full max-w-3xl">
             <iframe
-              className="w-full h-[40vh]"
+              className="w-full h-[35vh]"
               src={videoUrl}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

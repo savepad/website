@@ -1,10 +1,9 @@
 # *
 User-agent: *
 Allow: /
-Disallow: /private/
 
 # Host
-Host: https://www.savepad.app
+Host: http://localhost:3000
 
 # Sitemaps
-Sitemap: https://www.savepad.app/sitemap.xml
+Sitemap: http://localhost:3000/sitemap.xml

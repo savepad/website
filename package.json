@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
+    "local-sitemap": "NODE_ENV=development next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
