@@ -78,7 +78,7 @@ const PersonasPage: React.FC = () => {
       />
 
 <ContentBlock
-        imageUrl="/images/personas/Growth Teams.png"
+        imageUrl="/images/personas/Growth-Teams.png"
         imageAlt="For Growth Teams"
         heading="Bring your team's ideas together."
         paragraphs={[
@@ -97,7 +97,7 @@ const PersonasPage: React.FC = () => {
       />
 
 <ContentBlock
-        imageUrl="/images/personas/Devs and Designers.png"
+        imageUrl="/images/personas/Devs-Designers.png"
         imageAlt="For Devs and Designers"
         heading="Delight yourself & your clients every time."
         paragraphs={[

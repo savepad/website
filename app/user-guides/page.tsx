@@ -11,14 +11,14 @@ import Banner from '@/components/Banner';
 
 const videoCards = [
   {
-    imageUrl: '/images/user-guides/Creating Workspaces.png',
+    imageUrl: '/images/user-guides/Creating-Workspaces.png',
     imageAlt: 'Manage',
     title: 'Creating workspaces',
     description: "A walkthrough of creating your first workspaces in Savepad.",
     videoUrl: 'https://www.youtube-nocookie.com/embed/8G7vLJcbByA',
   },
   {
-    imageUrl: '/images/user-guides/Creating Workspaces.png',
+    imageUrl: '/images/user-guides/Creating-Workspaces.png',
     imageAlt: 'Manage',
     title: 'Creating collections & tags',
     description: "Establishing some structure and organization with collections and tags.",
