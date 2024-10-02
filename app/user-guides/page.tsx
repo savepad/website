@@ -7,53 +7,26 @@ import Footer from '@/components/Footer';
 import VideoGrid from '@/components/VideoGrid';
 import Cta from '@/components/Cta';
 import Breakpoint from '@/components/Breakpoint';
+import Banner from '@/components/Banner';
 
 const videoCards = [
   {
-    imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1723796788/Onboarding%20Video%20Cards/Creating_Workspaces_abrz97.png',
+    imageUrl: '/images/user-guides/Creating-Workspaces.png',
     imageAlt: 'Manage',
     title: 'Creating workspaces',
     description: "A walkthrough of creating your first workspaces in Savepad.",
-    videoUrl: 'https://res.cloudinary.com/savepad-web/video/upload/v1723795724/Onboarding%20Videos/Workspaces_gg9ypo.mp4',
+    videoUrl: 'https://www.youtube-nocookie.com/embed/8G7vLJcbByA',
   },
   {
-    imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1723796788/Onboarding%20Video%20Cards/Creating_Collections_and_Tags_ljzfei.png',
+    imageUrl: '/images/user-guides/Creating-Workspaces.png',
     imageAlt: 'Manage',
     title: 'Creating collections & tags',
     description: "Establishing some structure and organization with collections and tags.",
-    videoUrl: 'https://res.cloudinary.com/savepad-web/video/upload/v1723795557/Onboarding%20Videos/Tags_tbw1cs.mp4',
-  },
-  {
-    imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1723796788/Onboarding%20Video%20Cards/Creating_Links_wgkqzk.png',
-    imageAlt: 'Manage',
-    title: 'Creating saves - URLs',
-    description: "How to add links and URLs into Savepad, and what options you have available.",
-    videoUrl: 'https://res.cloudinary.com/savepad-web/video/upload/v1723794863/Onboarding%20Videos/Links-c_lhniba.mp4',
-  },
-  {
-    imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1723796788/Onboarding%20Video%20Cards/Creating_Media_and_Files_ihoiqq.png',
-    imageAlt: 'Manage',
-    title: 'Creating saves - Images & files',
-    description: "Uploading images, audio, video, files, and other documents into Savepad.",
-    videoUrl: 'https://res.cloudinary.com/savepad-web/video/upload/v1723794452/Onboarding%20Videos/Upload-c_nszhjt.mp4',
-  },
-  {
-    imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1723796789/Onboarding%20Video%20Cards/Creating_Notes_oqupq6.png',
-    imageAlt: 'Manage',
-    title: 'Creating saves - Notes',
-    description: "Creating notes in Savepad with formatting for rich text, markdown, and retaining formatting.",
-    videoUrl: 'https://res.cloudinary.com/savepad-web/video/upload/v1723794403/Onboarding%20Videos/Notes-c_qotrfs.mp4',
-  },
-  {
-    imageUrl: 'https://res.cloudinary.com/savepad-web/image/upload/v1723796768/Onboarding%20Video%20Cards/Savepad_for_Projects_wiglft.png',
-    imageAlt: 'Manage',
-    title: 'Working on Projects',
-    description: "A hypothetical look into using collections to create projects before collaborating with your team.",
-    videoUrl: 'https://res.cloudinary.com/savepad-web/video/upload/v1723795289/Onboarding%20Videos/Projects-c_a9ea0i.mp4',
+    videoUrl: 'https://www.youtube-nocookie.com/embed/8G7vLJcbByA',
   },
 ];
 
-const BlogPage: React.FC = () => {
+const GuidesPage: React.FC = () => {
   return (
     <main>
       <Nav />
@@ -70,14 +43,25 @@ const BlogPage: React.FC = () => {
 
 <div className="flex flex-1 items-center justify-center">
         <Breakpoint
-          header="Coming Soon..."
+          header="DIY Savepad Tutorials"
           texts={[
-            "The first round of videos were 💩 so we're working on re-publishing some quick demos of the platform to let you have a smooth self-serve onboarding experience. Stay tuned!"
+            "Here's a few snippets of common workflows and ways in which we use the app internally to get you using Savepad like a pro."
           ]}
         />
       </div>
 
-      {/* <VideoGrid videos={videoCards} columns={2} useShadowVideoCard /> */}
+
+      <VideoGrid videos={videoCards} columns={2} useShadowVideoCard />
+
+      <section className="mx-auto px-4 pb-4 max-w-[750px]">
+      <div>
+      <Banner
+        variant="success"
+        title=""
+        message="Although the videos are hosted on YouTube, we're using YouTube's privacy-enhanced mode."
+      />
+      </div>
+      </section>
 
       {/* <Cta
         title="Get started for free"
@@ -94,4 +78,4 @@ const BlogPage: React.FC = () => {
   );
 };
 
-export default BlogPage;
+export default GuidesPage;
