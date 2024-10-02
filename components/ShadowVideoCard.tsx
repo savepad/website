@@ -44,7 +44,7 @@ const ShadowVideoCard: React.FC<ShadowVideoCardProps> = ({ imageUrl, imageAlt, t
       <div className={`relative rounded-lg bg-zinc-950 p-12 flex ${singleColumn ? 'flex-col md:flex-row' : 'flex-col'} ${singleColumn && imageLeft ? 'md:flex-row-reverse' : ''} min-h-[500px]`}>
         {imageUrl && imageAlt && (
           <div className={`w-full ${singleColumn ? 'md:w-1/2' : ''} flex justify-center relative`}>
-            <div className="relative w-full h-full pb-[56.25%]">
+            <div className=" border-violet-950 rounded-lg border relative w-full h-full pb-[56.25%]">
               <Image
                 src={imageUrl}
                 alt={imageAlt}
