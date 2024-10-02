@@ -129,7 +129,7 @@ const FeaturesPage = () => {
 
 <div>
       <Banner
-        variant="info"
+        variant="warning"
         title=""
         message="Features are subject to change rapidly as we gather initial feedback during our beta phase."
       />
