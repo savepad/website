@@ -55,7 +55,7 @@ const FeaturesPage = () => {
       features: [
         { id: 'accounts', title: 'Accounds' },
         { id: 'workspaces', title: 'Workspaces' },
-        { id: 'save', title: 'Save' },
+        { id: 'save', title: 'Saves' },
         { id: 'collections', title: 'Collections' },
         { id: 'tagging', title: 'Tagging' },
         { id: 'collaboration', title: 'Collaboration' },
@@ -76,7 +76,7 @@ const FeaturesPage = () => {
         { id: 'code', title: 'Code' },
         // { id: 'emails', title: 'Emails' },
         { id: 'audio', title: 'Audio' },
-        { id: 'others', title: 'Other Formats' },
+        // { id: 'others', title: 'Other Formats' },
       ],
     },
     {
@@ -163,7 +163,7 @@ const FeaturesPage = () => {
             <CodeFeature />
             {/* <EmailsFeature /> */}
             <AudioFeature />
-            <OthersFeature />
+            {/* <OthersFeature /> */}
 
 
             {/* Collaboration */}

@@ -9,8 +9,6 @@ const LinksFeature = () => (
 
     <p>Some URLs are more than others. While all URLs added to Savepad will be enriched with the basics (thumbnails, titles, descriptions, etc.) some other URLs need a little more love to make sure you find what you&apos;re looking for in the future.</p><br></br>
 
-    <p>Saving a song from Spotify? We&apos;ll try to bring along the artist name, album art, lyrics, and genre. Dropping a YouTube link to a video? Let&apos;s try and bring the subtitles, channel details, and description so that you have all the context.</p><br></br>
-
     <p>You get the idea.</p><br></br>
   </section>
 );
