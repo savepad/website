@@ -37,6 +37,8 @@ const WaitlistHero: React.FC = () => {
     setLoading(true);
     setError('');
 
+    console.log('Submitting with captcha token:', captchaToken);
+
     try {
       const response = await fetch('/api/subscribe', {
         method: 'POST',
@@ -47,12 +49,15 @@ const WaitlistHero: React.FC = () => {
       });
 
       if (response.ok) {
+        console.log('Subscription successful');
         setSubmitted(true);
       } else {
         const data = await response.json();
+        console.error('Error response:', data);
         setError(data.error || 'Something went wrong. Please try again.');
       }
     } catch (error) {
+      console.error('Request failed:', error);
       setError('Something went wrong. Please try again.');
     } finally {
       setLoading(false);
@@ -99,7 +104,13 @@ const WaitlistHero: React.FC = () => {
         <div className="mt-4">
           <Turnstile
             siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY as string}
-            onSuccess={(token: string) => setCaptchaToken(token)}
+            onSuccess={(token: string) => {
+              setCaptchaToken(token);
+              console.log('Turnstile token received:', token);
+            }}
+            onError={() => {
+              console.error('Turnstile verification failed');
+            }}
           />
         </div>
 
