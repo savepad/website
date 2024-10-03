@@ -3,9 +3,7 @@ import Image from 'next/image';
 
 const SaveFeature = () => (
   <section id="save" className="mb-12 max-w-full">
-    <h3>Save</h3><br></br>
-
-    <Image src="https://savepad.app/wp-content/uploads/Saves.png" alt="Save feature" width={700} height={400} layout="responsive" /><br></br>
+    <h3>Saves</h3><br></br>
 
     <p>Saves are the core of working with Savepad.</p><br></br>
 

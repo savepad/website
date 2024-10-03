@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { FaInfoCircle, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 
 interface BannerProps {
-  variant: 'info' | 'warning' | 'success';
+  variant: 'info' | 'warning' | 'success' | 'btw';
   title?: string;
   message: string;
 }
@@ -13,18 +13,21 @@ const Banner: React.FC<BannerProps> = ({ variant, title, message }) => {
     info: 'bg-sky-600 bg-opacity-30 border-sky-600 border-opacity-60',
     warning: 'bg-amber-600 bg-opacity-30 border-amber-600 border-opacity-60',
     success: 'bg-emerald-600 bg-opacity-30 border-emerald-600 border-opacity-60',
+    btw: 'bg-gray-600 bg-opacity-30 border-gray-600 border-opacity-60',
   };
 
   const iconStyles = {
     info: 'text-sky-600',
     warning: 'text-amber-600',
     success: 'text-emerald-600',
+    btw: 'text-gray-600',
   };
 
   const iconMap = {
     info: <FaInfoCircle className={iconStyles.info} size={24} />,
     warning: <FaExclamationCircle className={iconStyles.warning} size={24} />,
     success: <FaCheckCircle className={iconStyles.success} size={24} />,
+    btw: <FaInfoCircle className={iconStyles.btw} size={24} />,
   };
 
   return (
@@ -42,6 +45,7 @@ const Banner: React.FC<BannerProps> = ({ variant, title, message }) => {
             'border-sky-600': variant === 'info',
             'border-amber-600': variant === 'warning',
             'border-emerald-600': variant === 'success',
+            'border-gray-600': variant === 'btw',
           }
         )}>
           {iconMap[variant]}

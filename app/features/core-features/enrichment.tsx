@@ -1,10 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
+import Banner from '@/components/Banner';
 
 const EnrichmentFeature = () => (
   <section id="enrichment" className="mb-12 max-w-full">
     <h3>Auto-enrichments</h3><br></br>
 
+    <div>
+      <Banner
+        variant="btw"
+        title=""
+        message="Currently works for URLs, more enrichments in development."
+      />
+    </div>
 
     <p>Browse your saves without leaving Savepad. Whenever possible, Savepad enriches all saves with further metadata and context, making things easy to find.</p><br></br>
 
