@@ -5,8 +5,6 @@ const SaveFeature = () => (
   <section id="save" className="mb-12 max-w-full">
     <h3>Save</h3><br></br>
 
-    <Image src="https://savepad.app/wp-content/uploads/Saves.png" alt="Save feature" width={700} height={400} layout="responsive" /><br></br>
-
     <p>Saves are the core of working with Savepad.</p><br></br>
 
     <p>Every new addition — a URL, an image, a video, an audio, a code snippet, a note, or any other file upload — counts as a save. These can be curated and organized within structured workspaces and collections.</p><br></br>

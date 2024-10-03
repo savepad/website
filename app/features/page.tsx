@@ -53,11 +53,11 @@ const FeaturesPage = () => {
     {
       category: 'Core Features',
       features: [
-        { id: 'save', title: 'Save' },
+        { id: 'accounts', title: 'Accounds' },
         { id: 'workspaces', title: 'Workspaces' },
+        { id: 'save', title: 'Save' },
         { id: 'collections', title: 'Collections' },
         { id: 'tagging', title: 'Tagging' },
-        { id: 'accounts', title: 'Accounts' },
         { id: 'collaboration', title: 'Collaboration' },
         { id: 'teams', title: 'Teams' },
         { id: 'enrichment', title: 'Enrichment' },
@@ -139,11 +139,11 @@ const FeaturesPage = () => {
             <h2 className="">Core Features</h2>
             <p className="mb-8">The fundamentals of Savepad that make it the ideal swipe file and knowledge base for you.</p>
 
-            <SaveFeature />
+            <AccountsFeature />
             <WorkspacesFeature />
+            <SaveFeature />
             <CollectionsFeature />
             <TaggingFeature />
-            <AccountsFeature />
             <CollaborationFeature />
             <TeamsFeature />
             <EnrichmentFeature />
