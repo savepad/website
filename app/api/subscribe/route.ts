@@ -56,6 +56,22 @@ export async function POST(req: Request) {
     const response = await fetch(endpoint, requestOptions);
 
     if (response.ok) {
+      const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL;
+
+      if (slackWebhookUrl) {
+        const slackPayload = {
+          text: `New email submitted: ${email}`,
+        };
+
+        await fetch(slackWebhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(slackPayload),
+        });
+      }
+
       return NextResponse.json({ message: 'Subscribed successfully!' });
     } else {
       const error = await response.json();
