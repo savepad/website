@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-zinc-950 text-gray-300">
       <div className="container mx-auto max-w-[1440px] px-4 py-12">
-      <div className="mb-12 border-t border-gray-700 pt-4 flex justify-between items-center"></div>
+        <div className="mb-12 border-t border-gray-700 pt-4 flex justify-between items-center"></div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/">
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           </div>
           <div></div>
           <div>
-          <h4 className="mb-2">Product</h4>
+            <h4 className="mb-2">Product</h4>
             <ul>
               <li><Link href="/features" className="text-gray-400 hover:text-violet-400">Features</Link></li>
               <li><Link href="/user-guides" className="text-gray-400 hover:text-violet-400">How to Savepad</Link></li>
@@ -30,36 +30,48 @@ const Footer: React.FC = () => {
               <li><Link href="/personas" className="text-gray-400 hover:text-violet-400">Personas</Link></li>
               <li><Link href="/changelog" className="text-gray-400 hover:text-violet-400">Product Updates</Link></li>
             </ul>
-            </div>
-          
+          </div>
+
           <div>
             <h4 className="mb-2">Savepad</h4>
             <ul>
               <li><Link href="/about" className="text-gray-400 hover:text-violet-400">About</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-violet-400">Blog</Link></li>
-              {/* <li><Link href="/legal/privacy-policy" className="text-gray-400 hover:text-violet-400">Privacy Policy</Link></li>
-              <li><Link href="/legal/terms" className="text-gray-400 hover:text-violet-400">Terms of Use</Link></li> */}
               <li><Link href="https://savepad.struct.ai/" className="text-gray-400 hover:text-violet-400">Support & Community</Link></li>
             </ul>
+            <div className="flex space-x-4 mt-6">
+              <Link href="https://twitter.com/savepadapp" target="_blank">
+                <FaTwitter className="text-gray-300 hover:text-gray-100" size={24} />
+              </Link>
+              <Link href="https://linkedin.com/company/savepad" target="_blank">
+                <FaLinkedin className="text-gray-300 hover:text-gray-100" size={24} />
+              </Link>
+              <Link href="https://www.youtube.com/@savepad" target="_blank">
+                <FaYoutube className="text-gray-300 hover:text-gray-100" size={24} />
+              </Link>
+              <Link href="https://github.com/savepad/website" target="_blank">
+                <FaGithub className="text-gray-300 hover:text-gray-100" size={24} />
+              </Link>
+              <Link href="https://savepad.struct.ai/" target="_blank">
+                <Image src="/logos/Struct.svg" alt="Struct" width={24} height={24} />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="mt-12 border-t border-gray-700 pt-4 flex justify-between items-center">
           <p>&copy; 2024 - Present, Savepad, All Rights Reserved</p>
-          <div className="flex space-x-4 mt-6">
-            <Link href="https://twitter.com/savepadapp" target="_blank">
-              <FaTwitter className="text-gray-300 hover:text-gray-100" size={24} />
+
+          <div className="flex items-center space-x-4">
+            <span className="text-gray-400">By</span>
+            <Link href="https://github.com/feychenie" target="_blank">
+              <Image src="/avatars/fred.jpeg" alt="Developer A" width={30} height={30} className="rounded-full" />
             </Link>
-            <Link href="https://linkedin.com/company/savepad" target="_blank">
-              <FaLinkedin className="text-gray-300 hover:text-gray-100" size={24} />
+            <Link href="https://github.com/mahaveer0496" target="_blank">
+              <Image src="/avatars/mahaveer.jpeg" alt="Developer B" width={30} height={30} className="rounded-full" />
             </Link>
-            <Link href="https://www.youtube.com/@savepad" target="_blank">
-              <FaYoutube className="text-gray-300 hover:text-gray-100" size={24} />
-            </Link>
-            <Link href="https://github.com/savepad/website" target="_blank">
-              <FaGithub className="text-gray-300 hover:text-gray-100" size={24} />
-            </Link>
-            <Link href="https://savepad.struct.ai/" target="_blank">
-              <Image src="/logos/Struct.svg" alt="Struct" width={24} height={24} />
+            <span className="text-gray-400">&</span>
+            <Link href="https://ronakganatra.com" target="_blank">
+              <Image src="/avatars/ronak.jpeg" alt="Developer C" width={30} height={30} className="rounded-full" />
             </Link>
           </div>
         </div>
