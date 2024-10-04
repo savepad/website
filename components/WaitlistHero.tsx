@@ -52,7 +52,7 @@ const WaitlistHero: React.FC = () => {
         console.log('Subscription successful');
         setSubmitted(true);
       } else {
-        const data = await response.json();
+        const data = await response.json() as any;
         console.error('Error response:', data);
         setError(data.error || 'Something went wrong. Please try again.');
       }

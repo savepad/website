@@ -19,7 +19,10 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "types": [
+        "@cloudflare/workers-types/2023-07-01"
+    ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next-sitemap.config.js"],
   "exclude": ["node_modules"]
