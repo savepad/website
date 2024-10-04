@@ -21,7 +21,7 @@ const videoCards = [
     imageUrl: '/images/user-guides/links.png',
     imageAlt: 'Links',
     title: 'Working with Links & URLs',
-    description: "Add links to Savepag, and enrich them with as much or as little context as you'd like to never lose them.",
+    description: "Add links to Savepad, and enrich them with as much or as little context as you'd like to never lose them.",
     videoUrl: 'https://www.youtube-nocookie.com/embed/8paV5GMO-0Y',
   },
   {
