@@ -1,6 +1,7 @@
 import './globals.css';
 import { ReactNode } from 'react';
 import CookieConsent from '@/components/CookieConsent';
+import { CSPostHogProvider } from './providers'
 
 export const metadata = {
   title: 'Savepad',
@@ -21,10 +22,12 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <CSPostHogProvider>
       <body>
         {children}
       </body>
       <CookieConsent />
+      </CSPostHogProvider>
     </html>
   );
 }
