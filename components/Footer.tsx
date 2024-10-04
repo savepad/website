@@ -58,20 +58,21 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-700 pt-4 flex justify-between items-center">
+
+        <div className="mt-12 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center">
           <p>&copy; 2024 - Present, Savepad, All Rights Reserved</p>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <span className="text-gray-400">By</span>
             <Link href="https://github.com/feychenie" target="_blank">
-              <Image src="/avatars/fred.jpeg" alt="Developer A" width={30} height={30} className="rounded-full" />
+              <Image src="/avatars/fred.jpeg" alt="Fred" width={45} height={45} className="rounded-full" />
             </Link>
             <Link href="https://github.com/mahaveer0496" target="_blank">
-              <Image src="/avatars/mahaveer.jpeg" alt="Developer B" width={30} height={30} className="rounded-full" />
+              <Image src="/avatars/mahaveer.jpeg" alt="Mahaveer" width={45} height={45} className="rounded-full" />
             </Link>
             <span className="text-gray-400">&</span>
             <Link href="https://ronakganatra.com" target="_blank">
-              <Image src="/avatars/ronak.jpeg" alt="Developer C" width={30} height={30} className="rounded-full" />
+              <Image src="/avatars/ronak.jpeg" alt="Ronak" width={45} height={45} className="rounded-full" />
             </Link>
           </div>
         </div>
