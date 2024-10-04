@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'Savepad',
     images: [
       {
-        url: '/images/savepad-og.png',
+        url: 'https://savepad.app/images/savepad-og.png',
         width: 1280,
         height: 720,
         alt: 'Savepad OG Image',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@savepadapp',
     creator: '@gunnyganatra',
-    images: ['/images/savepad-og.png'],
+    images: ['https://savepad.app/images/savepad-og.png'],
   },
 };
 
