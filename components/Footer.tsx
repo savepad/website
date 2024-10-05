@@ -39,7 +39,13 @@ const Footer: React.FC = () => {
               <li><Link href="/blog" className="text-gray-400 hover:text-violet-400">Blog</Link></li>
               <li><Link href="https://savepad.struct.ai/" className="text-gray-400 hover:text-violet-400">Support & Community</Link></li>
             </ul>
-            <div className="flex space-x-4 mt-6">
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center">
+          <p>&copy; 2024 - Present, Savepad, All Rights Reserved</p>
+
+          <div className="flex space-x-4 mt-6">
               <Link href="https://twitter.com/savepadapp" target="_blank">
                 <FaTwitter className="text-gray-300 hover:text-gray-100" size={24} />
               </Link>
@@ -56,13 +62,8 @@ const Footer: React.FC = () => {
                 <Image src="/logos/Struct.svg" alt="Struct" width={24} height={24} />
               </Link>
             </div>
-          </div>
-        </div>
 
-        <div className="mt-12 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; 2024 - Present, Savepad, All Rights Reserved</p>
-
-          <div className="flex items-center space-x-4 mt-4 md:mt-0">
+          {/* <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <span className="text-gray-400">By</span>
             <Link href="https://github.com/feychenie" target="_blank">
               <Image src="/avatars/fred.jpeg" alt="Fred" width={45} height={45} className="rounded-full" />
@@ -74,7 +75,7 @@ const Footer: React.FC = () => {
             <Link href="https://ronakganatra.com" target="_blank">
               <Image src="/avatars/ronak.jpeg" alt="Ronak" width={45} height={45} className="rounded-full" />
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
