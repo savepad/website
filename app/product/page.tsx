@@ -25,8 +25,8 @@ const ProductPage: React.FC = () => {
     },
     {
       title: 'Community & Support',
-      description: "Join other Savepad users on our community on Struct.",
-      link: 'https://savepad.struct.ai/',
+      description: "Join other Savepad users on our community on Discord.",
+      link: 'https://discord.gg/PAV5PDVj98',
     },
   ];
 

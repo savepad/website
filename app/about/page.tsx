@@ -25,7 +25,7 @@ Savepad is built on the principles of [opinionated software](https://linear.app/
 
 We’re working towards making our roadmap public soon, and will be making changes to a Public GitHub board with all upcoming features.
 
-In the meanwhile if you’re curious about the progress on Savepad, join the waitlist, follow us on [Twitter](https://twitter.com/savepadapp), or join the [community on Struct](https://savepad.struct.ai/join/ybKwJ0cEzJKPE5V0sMaX06alWMWUVjuT)!
+In the meanwhile if you’re curious about the progress on Savepad, join the waitlist, follow us on [Twitter](https://twitter.com/savepadapp), or join the [community on Discord](https://discord.gg/PAV5PDVj98)!
 
 If you’ve got an idea for Savepad or a feature request, [let us know](https://forms.gle/XJh4eHjKASEfPQNy6)!
 

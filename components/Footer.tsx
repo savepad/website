@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaTwitter, FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub, FaYoutube, FaDiscord } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             <ul>
               <li><Link href="/about" className="text-gray-400 hover:text-violet-400">About</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-violet-400">Blog</Link></li>
-              <li><Link href="https://savepad.struct.ai/" className="text-gray-400 hover:text-violet-400">Support & Community</Link></li>
+              <li><Link href="https://discord.gg/PAV5PDVj98" className="text-gray-400 hover:text-violet-400">Support & Community</Link></li>
             </ul>
           </div>
         </div>
@@ -58,8 +58,8 @@ const Footer: React.FC = () => {
               <Link href="https://github.com/savepad/website" target="_blank">
                 <FaGithub className="text-gray-300 hover:text-gray-100" size={24} />
               </Link>
-              <Link href="https://savepad.struct.ai/" target="_blank">
-                <Image src="/logos/Struct.svg" alt="Struct" width={24} height={24} />
+              <Link href="https://discord.gg/PAV5PDVj98" target="_blank">
+                <FaDiscord className="text-gray-300 hover:text-gray-100" size={24} />
               </Link>
             </div>
 
