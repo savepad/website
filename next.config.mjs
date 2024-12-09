@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'development') {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com', 'via.placeholder.com', 'savepad.app', 'commondatastorage.googleapis.com'],
+    domains: ['res.cloudinary.com', 'via.placeholder.com', 'placehold.co', 'savepad.app', 'commondatastorage.googleapis.com'],
   },
   webpack(config) {
     config.module.rules.push({

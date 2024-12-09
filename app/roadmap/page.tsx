@@ -31,19 +31,17 @@ const roadmapData = {
         title: 'Feature Name',
         description: 'Feature description in a few words.',
         pills: ['Pill 1', 'Pill 2'],
-        url: 'https://example.com/performance-improvements',
       },
       {
         title: 'Feature Name',
         description: 'Feature description in a few words.',
         pills: ['Pill 1', 'Pill 2'],
-        url: 'https://example.com/performance-improvements',
+        url: '/changelog#01',
       },
       {
         title: 'Feature Name',
         description: 'Feature description in a few words.',
         pills: ['Pill 1', 'Pill 2'],
-        url: 'https://example.com/performance-improvements',
       },
   ],
 };
