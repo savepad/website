@@ -1,51 +1,34 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
-import Nav from '../../components/Nav';
-import CenterHero from '@/components/CenterHero';
-import WallOfText from '../../components/WallOfText';
+import React, { useState, useEffect } from 'react';
+import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import Banner from '@/components/Banner';
+import CenterHero from '@/components/CenterHero';
 
-// Add the most recent release on top
-// Also, follow this format for consistency with a line between each
+import Changelog1 from './entries/2024-01-01';
 
-// #### Date, year
-// ![Release Image](png)
-// ## Title of the release!
-// TLDR of the release.
+const changelogEntries = [
+  { id: '01', title: 'YEAR, Month, Day', component: <Changelog1 /> },
+];
 
-// ### 💎 What's New
-// - Thing — Description
-// - Thing — Description
-
-// ### 🛠️ Improvements and Fixes
-// - Thing — Description
-// - Thing — Description
-// ___
-
-const ChangelogContent = `
-
-`;
-
-const extractHeadings = (content: string) => {
-  const regex = /^(#{2,3})\s+(.*)$/gm;
-  const headings = [];
-  let match;
-  while ((match = regex.exec(content)) !== null) {
-    const [, hashes, title] = match;
-    const level = hashes.length;
-    const id = title.toLowerCase().replace(/\s+/g, '-');
-    headings.push({ id, title, level });
-  }
-  return headings;
-};
-
-const ChangelogPage: React.FC = () => {
-  const [headings, setHeadings] = useState<{ id: string; title: string; level: number }[]>([]);
+export default function ChangelogPage() {
+  const [activeEntry, setActiveEntry] = useState('');
 
   useEffect(() => {
-    setHeadings(extractHeadings(ChangelogContent));
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 200;
+      let currentEntry = '';
+      changelogEntries.forEach(({ id }) => {
+        const element = document.getElementById(id);
+        if (element && element.offsetTop <= scrollPosition) {
+          currentEntry = id;
+        }
+      });
+      setActiveEntry(currentEntry);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -54,25 +37,39 @@ const ChangelogPage: React.FC = () => {
       <CenterHero
         tagline="🐙 Changelog"
         heading="Product Updates"
-        description=""
+        description="Check out our latest updates and improvements to Savepad."
       />
-      <section className="mx-auto px-4 pb-4 max-w-[750px]">
-      <div>
-      <Banner
-        variant="info"
-        title=""
-        message="Stay tuned for our first product update as we open up the waitlist."
-      />
+      <div className="relative flex max-w-content mx-auto px-4">
+
+        <aside className="hidden lg:block w-1/4 sticky top-24 h-screen pr-8">
+          <nav className="space-y-4">
+            <p>Releases</p>
+            {changelogEntries.map(({ id, title }) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                className={`block text-sm ${
+                  activeEntry === id ? 'text-violet-500' : 'text-gray-400'
+                } hover:text-violet-400`}
+              >
+                {title}
+              </a>
+            ))}
+          </nav>
+        </aside>
+
+        <section className="flex-1 space-y-12">
+          {changelogEntries.map(({ id, component }, index) => (
+            <div key={id} id={id}>
+              {component}
+              {index < changelogEntries.length - 1 && (
+                <hr className="border-t border-gray-700 my-8" />
+              )}
+            </div>
+          ))}
+        </section>
       </div>
-      </section>
-      <div>
-          <div>
-            <WallOfText content={ChangelogContent} />
-          </div>
-        </div>
-        <Footer />
+      <Footer />
     </main>
   );
-};
-
-export default ChangelogPage;
+}
