@@ -28,6 +28,7 @@ const Footer: React.FC = () => {
               <li><Link href="/user-guides" className="text-gray-400 hover:text-violet-400">How to Savepad</Link></li>
               <li><Link href="/use-cases" className="text-gray-400 hover:text-violet-400">Use Cases</Link></li>
               <li><Link href="/personas" className="text-gray-400 hover:text-violet-400">Personas</Link></li>
+              <li><Link href="/roadmap" className="text-gray-400 hover:text-violet-400">Roadmap</Link></li>
               <li><Link href="/changelog" className="text-gray-400 hover:text-violet-400">Product Updates</Link></li>
             </ul>
           </div>
