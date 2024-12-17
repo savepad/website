@@ -15,7 +15,7 @@ const HomeHero: React.FC = () => {
           Savepad is the collaborative swipe file to store, organize, reference, share, and actually use all the resources and examples you have.
         </p>
         <div className="mt-8 flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-          <Button label="Create your free account" variant="primary" icon={FaArrowRight} href="https://app.savepad.dev/" />
+          <Button label="Create your free account" variant="primary" icon={FaArrowRight} href="https://my.savepad.app/" />
           <Button label="Watch demos" variant="secondary" icon={FaPlay} href="/user-guides" />
         </div>
         <p className="mt-8 text-xs leading-relaxed text-gray-400">
