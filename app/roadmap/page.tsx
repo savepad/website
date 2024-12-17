@@ -6,42 +6,100 @@ import RoadmapCard from '@/components/RoadmapCard';
 
 const roadmapData = {
   ideas: [
-    {
-      title: 'Feature Name',
-      description: 'Feature description in a few words.',
-      pills: ['Pill 1', 'Pill 2'],
-    },
+    
   ],
   planning: [
     {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
-      },
+      title: 'Public Workspaces',
+      description: 'Create read-only workspaces available on the web.',
+      pills: ['Enhancement'],
+    },
+    {
+      title: 'Embedded Workspaces',
+      description: 'Embed your workspaces on other platforms and websites.',
+      pills: ['Enhancement'],
+    },
+    {
+      title: 'Integrations',
+      description: 'Common integrations for apps like Slack, Discord, and Raycast.',
+      pills: ['Core Feature'],
+    },
   ],
   inProgress: [
     {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
+        title: 'Bulk Operations',
+        description: 'Create and edit saves in bulk.',
+        pills: ['Enhancement'],
+      },
+      {
+        title: 'iOS and MacOS Apps',
+        description: 'Native apps for mobile and desktop.',
+        pills: ['Core Feature'],
+      },
+      {
+        title: 'Chrome extension',
+        description: 'Native apps for mobile and desktop.',
+        pills: ['Core Feature'],
+      },
+      {
+        title: 'Email saves',
+        description: 'Forward emails to your collections.',
+        pills: ['Core Feature'],
+      },
+      {
+        title: 'Code Syntax Highlighting',
+        description: 'Cleaner visuals for saved code snippets.',
+        pills: ['Enhancement'],
       },
   ],
   done: [
     {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
-      },
-      {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
+        title: 'Workspaces and Teams',
+        description: 'Create workspaces for your account and invite users.',
+        pills: ['Core Feature'],
         url: '/changelog#01',
       },
       {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
+        title: 'Saves',
+        description: 'Create new saves for URLs, images, files, videos, and notes.',
+        pills: ['Core Feature'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Collections and Tags',
+        description: 'Organize your saves as much or as little as you like.',
+        pills: ['Core Feature'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Backlog',
+        description: 'A dumping ground for saves in need of cleaning up.',
+        pills: ['Core Feature'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Backlog',
+        description: 'A dumping ground for saves in need of cleaning up.',
+        pills: ['Core Feature'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Auto Enrichments (Links)',
+        description: 'Automatically generate metadata for saved URLs',
+        pills: ['Enhancement'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Search',
+        description: 'Find saves by title, description, content, or tags',
+        pills: ['Enhancement'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Custom Views',
+        description: 'Sort saves alphabetically or chronologically, and view by list or grid',
+        pills: ['Enhancement'],
+        url: '/changelog#01',
       },
   ],
 };
