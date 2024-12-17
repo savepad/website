@@ -17,9 +17,23 @@ const Changelog1: React.FC = () => {
         />
       </div>
       <h3 className="text-xl font-semibold text-gray-100 mt-6 mb-3">💎 What&apos;s New</h3>
-      <p>We&apos;ve officially launched Savepad to the first wave of waitlist users to gather feedback as we prepare for the public beta release.</p>
-
-<p>This version includes full support for workspaces, teams, saves, tags, and collections.</p>
+      <p>We&apos;ve officially launched Savepad to the first wave of waitlist users to gather feedback as we prepare for the public beta release.</p><br></br>
+<p>This version includes a fully-functional MVP that covers all the core features of Savepad:</p><br></br>
+<ul className='leading-loose'>
+<li>📧 Creating accounts and workspaces, along with inviting other users into your team.</li>
+<li>🔖 Creating collections in your workspaces for easy organization, along with tags for your saves.</li>
+<li>💾 Creating saves for URLs, images, videos, audio files, documents, PDFs, notes, code, and more.</li>
+<li>🪄 Auto enhancements to add metadata to URLs.</li>
+<li>📦 A backlog to serve as a dumping ground for unorganized saves.</li>
+<li>🖱️ A web-app with more apps on the way.</li>
+<li>👀 Custom views for grid and lists.</li>
+<li>🔤 Custom sorting alphabetically or chronologically, as well as filters by save type, collections, and tags.</li>
+<li>🔍 Workspace-wide search to find saves in a pinch.</li>
+</ul><br></br>
+<p>We&apos;ve also published our&nbsp;<a href="/roadmap">roadmap</a> to keep an eye on what we&apos;ll be working on. If you have feature requests you can submit them via the feedback form in the app.</p><br></br>
+<p>We&apos;ve also published some quick <a href="/user-guides">user guides</a> to DIY your onboarding onto the app in a simple and digestable format.</p><br></br>
+<p>We&apos;ll be updating our roadmap and guides constantly as we gather your feedback and prep for the public beta launch!</p>
+<p>&nbsp;</p>
     </article>
   );
 };

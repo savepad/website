@@ -53,6 +53,11 @@ const roadmapData = {
       description: 'Edit saves and collections en masse.',
       pills: ['Enhancement'],
     },
+    {
+      title: 'Advanced Enhancements',
+      description: 'Transcriptions, OCR, fun stuff.',
+      pills: ['Enhancement'],
+    },
   ],
   working: [
     {
