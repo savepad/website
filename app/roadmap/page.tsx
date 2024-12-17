@@ -5,8 +5,12 @@ import Footer from '@/components/Footer';
 import RoadmapCard from '@/components/RoadmapCard';
 
 const roadmapData = {
-  ideas: [
-    
+  thinking: [
+    {
+      title: '✨AI✨',
+      description: '#SEO while we figure out what to do with this that is actually useful 🤭',
+      pills: ['Core Feature'],
+    },
   ],
   planning: [
     {
@@ -24,21 +28,46 @@ const roadmapData = {
       description: 'Common integrations for apps like Slack, Discord, and Raycast.',
       pills: ['Core Feature'],
     },
-  ],
-  inProgress: [
     {
-        title: 'Bulk Operations',
-        description: 'Create and edit saves in bulk.',
+      title: 'MacOS App',
+      description: 'Native app for MacOS.',
+      pills: ['Core Feature'],
+    },
+    {
+      title: 'Windows App',
+      description: 'Native app for Windows.',
+      pills: ['Core Feature'],
+    },
+    {
+      title: 'Safari Extension',
+      description: 'Browser extension for Safari users.',
+      pills: ['Core Feature'],
+    },
+    {
+      title: 'Firefox Extension',
+      description: 'Browser extension for Firefox users.',
+      pills: ['Core Feature'],
+    },
+    {
+      title: 'Bulk Operations',
+      description: 'Edit saves and collections en masse.',
+      pills: ['Enhancement'],
+    },
+  ],
+  working: [
+    {
+        title: 'Bulk Imports',
+        description: 'Create saves in Savepad en masse.',
         pills: ['Enhancement'],
       },
       {
-        title: 'iOS and MacOS Apps',
-        description: 'Native apps for mobile and desktop.',
+        title: 'iOS and Android Apps',
+        description: 'Native apps for mobile.',
         pills: ['Core Feature'],
       },
       {
         title: 'Chrome extension',
-        description: 'Native apps for mobile and desktop.',
+        description: 'Browser extension for Chrome, Arc, Edge, etc. users.',
         pills: ['Core Feature'],
       },
       {
@@ -109,9 +138,9 @@ export default function RoadmapPage() {
       stage.replace(/([A-Z])/g, ' $1').replace(/^\w/, (c) => c.toUpperCase());
   
     const stageColors = {
-      ideas: 'bg-sky-500',
+      thinking: 'bg-sky-500',
       planning: 'bg-rose-500',
-      inProgress: 'bg-amber-500',
+      working: 'bg-amber-500',
       done: 'bg-emerald-500',
     };
   
