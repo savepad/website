@@ -45,7 +45,7 @@ const Nav: React.FC = () => {
           <ButtonRound
             label="Launch app"
             variant="primary"
-            href="https://app.savepad.dev/"
+            href="https://my.savepad.app/"
             icon={FaArrowRight}
           />
         </div>
@@ -121,7 +121,7 @@ const Nav: React.FC = () => {
               <Button
                 label="Create your free account"
                 variant="primary"
-                href="https://app.savepad.dev/"
+                href="https://my.savepad.app/"
                 icon={FaArrowRight}
               />
             </div>

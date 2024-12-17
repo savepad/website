@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             </Link>
             <p className="mt-4">The collaborative Swipe File and Knowledge Base.</p>
             <ul className="mt-4">
-              <li><Link href="https://app.savepad.dev/" className="text-gray-400 hover:text-violet-400">Create your free account</Link></li>
+              <li><Link href="https://my.savepad.app/" className="text-gray-400 hover:text-violet-400">Create your free account</Link></li>
             </ul>
           </div>
           <div></div>
