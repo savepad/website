@@ -93,13 +93,6 @@ const GuidesPage: React.FC = () => {
       <section className="mx-auto px-4 pb-4 max-w-[750px]">
       <div>
       <Banner
-        variant="success"
-        title=""
-        message="The videos are hosted using YouTube's privacy-enhanced mode."
-      />
-      </div>
-      <div>
-      <Banner
         variant="warning"
         title=""
         message="The product will be rapidly evolving based on feedback during the beta stages! We'll try our best to catch up with keeping the videos up to date 😅"

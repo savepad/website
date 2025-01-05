@@ -53,7 +53,7 @@ const FeaturesPage = () => {
     {
       category: 'Core Features',
       features: [
-        { id: 'accounts', title: 'Accounds' },
+        { id: 'accounts', title: 'Accounts' },
         { id: 'workspaces', title: 'Workspaces' },
         { id: 'save', title: 'Saves' },
         { id: 'collections', title: 'Collections' },

@@ -5,43 +5,135 @@ import Footer from '@/components/Footer';
 import RoadmapCard from '@/components/RoadmapCard';
 
 const roadmapData = {
-  ideas: [
+  thinking: [
     {
-      title: 'Feature Name',
-      description: 'Feature description in a few words.',
-      pills: ['Pill 1', 'Pill 2'],
+      title: '✨AI✨',
+      description: '#SEO while we figure out what to do with this that is actually useful 🤭',
+      pills: ['Core Feature'],
     },
   ],
   planning: [
     {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
-      },
-  ],
-  inProgress: [
+      title: 'Public Workspaces',
+      description: 'Create read-only workspaces available on the web.',
+      pills: ['Enhancement'],
+    },
     {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
+      title: 'Embedded Workspaces',
+      description: 'Embed your workspaces on other platforms and websites.',
+      pills: ['Enhancement'],
+    },
+    {
+      title: 'Integrations',
+      description: 'Common integrations for apps like Slack, Discord, and Raycast.',
+      pills: ['Core Feature'],
+    },
+    {
+      title: 'MacOS App',
+      description: 'Native app for MacOS.',
+      pills: ['Core Feature'],
+    },
+    {
+      title: 'Windows App',
+      description: 'Native app for Windows.',
+      pills: ['Core Feature'],
+    },
+    {
+      title: 'Safari Extension',
+      description: 'Browser extension for Safari users.',
+      pills: ['Core Feature'],
+    },
+    {
+      title: 'Firefox Extension',
+      description: 'Browser extension for Firefox users.',
+      pills: ['Core Feature'],
+    },
+    {
+      title: 'Bulk Operations',
+      description: 'Edit saves and collections en masse.',
+      pills: ['Enhancement'],
+    },
+    {
+      title: 'Advanced Enhancements',
+      description: 'Transcriptions, OCR, fun stuff.',
+      pills: ['Enhancement'],
+    },
+  ],
+  working: [
+    {
+        title: 'Bulk Imports',
+        description: 'Create saves in Savepad en masse.',
+        pills: ['Enhancement'],
+      },
+      {
+        title: 'iOS and Android Apps',
+        description: 'Native apps for mobile.',
+        pills: ['Core Feature'],
+      },
+      {
+        title: 'Chrome extension',
+        description: 'Browser extension for Chrome, Arc, Edge, etc. users.',
+        pills: ['Core Feature'],
+      },
+      {
+        title: 'Email saves',
+        description: 'Forward emails to your collections.',
+        pills: ['Core Feature'],
+      },
+      {
+        title: 'Code Syntax Highlighting',
+        description: 'Cleaner visuals for saved code snippets.',
+        pills: ['Enhancement'],
       },
   ],
   done: [
     {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
-      },
-      {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
+        title: 'Workspaces and Teams',
+        description: 'Create workspaces for your account and invite users.',
+        pills: ['Core Feature'],
         url: '/changelog#01',
       },
       {
-        title: 'Feature Name',
-        description: 'Feature description in a few words.',
-        pills: ['Pill 1', 'Pill 2'],
+        title: 'Saves',
+        description: 'Create new saves for URLs, images, files, videos, and notes.',
+        pills: ['Core Feature'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Collections and Tags',
+        description: 'Organize your saves as much or as little as you like.',
+        pills: ['Core Feature'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Backlog',
+        description: 'A dumping ground for saves in need of cleaning up.',
+        pills: ['Core Feature'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Backlog',
+        description: 'A dumping ground for saves in need of cleaning up.',
+        pills: ['Core Feature'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Auto Enrichments (Links)',
+        description: 'Automatically generate metadata for saved URLs',
+        pills: ['Enhancement'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Search',
+        description: 'Find saves by title, description, content, or tags',
+        pills: ['Enhancement'],
+        url: '/changelog#01',
+      },
+      {
+        title: 'Custom Views',
+        description: 'Sort saves alphabetically or chronologically, and view by list or grid',
+        pills: ['Enhancement'],
+        url: '/changelog#01',
       },
   ],
 };
@@ -51,9 +143,9 @@ export default function RoadmapPage() {
       stage.replace(/([A-Z])/g, ' $1').replace(/^\w/, (c) => c.toUpperCase());
   
     const stageColors = {
-      ideas: 'bg-sky-500',
+      thinking: 'bg-sky-500',
       planning: 'bg-rose-500',
-      inProgress: 'bg-amber-500',
+      working: 'bg-amber-500',
       done: 'bg-emerald-500',
     };
   
