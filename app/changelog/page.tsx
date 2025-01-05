@@ -8,7 +8,7 @@ import CenterHero from '@/components/CenterHero';
 import Changelog1 from './entries/2024-12-19';
 
 const changelogEntries = [
-  { id: '01', title: '2024, Dec 19', component: <Changelog1 /> },
+  { id: '01', title: '2025, Jan 07', component: <Changelog1 /> },
 ];
 
 export default function ChangelogPage() {
