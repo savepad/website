@@ -5,7 +5,7 @@ const Changelog1: React.FC = () => {
   return (
     <article id="01" className="mb-12">
       <h2 className="text-3xl font-medium text-gray-100 mb-2">Savepad is live in Beta 🎉</h2>
-      <p className="text-sm text-gray-400">January 07, 2025</p>
+      <p className="text-sm text-gray-400">January 14, 2025</p>
       <div className="relative max-w-3xl my-12">
         <Image
           src="/images/changelog/001.png"
