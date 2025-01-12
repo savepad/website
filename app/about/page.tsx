@@ -35,6 +35,8 @@ Savepad is committed to providing the best user experience with as little tracki
 
 As we build out the website and product, we’ll constantly update this to make sure we’re being transparent using simple terminology every time we make changes to our Privacy and Terms pages.
 
+More details can be found on our [Imprint](/legal/imprint), [Privacy and Cookie Policy](/legal/privacy-policy), and [Terms of Use](/legal/terms).
+
 `;
 
 // You can access these pages on our [Privacy Policy](/legal/privacy-policy) and [Terms of Service](/legal/terms) pages.

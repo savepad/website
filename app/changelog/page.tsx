@@ -5,10 +5,10 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import CenterHero from '@/components/CenterHero';
 
-import Changelog1 from './entries/2024-12-19';
+import Changelog1 from './entries/2025-01-14';
 
 const changelogEntries = [
-  { id: '01', title: '2025, Jan 07', component: <Changelog1 /> },
+  { id: '01', title: '2025, Jan 14', component: <Changelog1 /> },
 ];
 
 export default function ChangelogPage() {
